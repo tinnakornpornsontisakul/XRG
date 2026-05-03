@@ -593,6 +593,95 @@
     letter-spacing: 0.05em;
   }
 
+  /* ============ HOTEL INFO CARD ============ */
+  .hotel-info-card {
+    background: var(--paper-soft);
+    border-left: 3px solid var(--gold);
+    padding: 12px 16px;
+    margin: 14px 0;
+    border-radius: 4px;
+    font-size: 13px;
+    line-height: 1.7;
+  }
+  .hotel-info-card .row {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    padding: 3px 0;
+  }
+  .hotel-info-card .row .label {
+    color: var(--ink-soft);
+    min-width: 95px;
+    font-weight: 600;
+    font-size: 12px;
+    flex-shrink: 0;
+  }
+  .hotel-info-card .row .value {
+    color: var(--ink);
+    flex: 1;
+  }
+  .hotel-info-card a {
+    color: var(--indigo);
+    text-decoration: none;
+    border-bottom: 1px dotted var(--indigo-soft);
+  }
+  .hotel-info-card a:hover { color: var(--vermilion); }
+  .hotel-back-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--paper-soft);
+    border: 1px solid var(--line);
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-size: 12px;
+    color: var(--ink-soft);
+    margin-top: 8px;
+  }
+  .hotel-back-pill a { color: var(--indigo); text-decoration: none; font-weight: 500; }
+
+  /* ============ IMAGE GALLERY (multi-photo) ============ */
+  .img-gallery {
+    margin: 14px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 8px;
+  }
+  .img-gallery .gallery-item {
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+    background: var(--paper-soft);
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+  }
+  .img-gallery .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+  }
+  .img-gallery .gallery-item:hover img { transform: scale(1.04); }
+  .img-gallery .gallery-item .caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.78));
+    color: white;
+    padding: 18px 10px 8px;
+    font-size: 11px;
+    font-family: 'Noto Serif JP', serif;
+    letter-spacing: 0.04em;
+    line-height: 1.3;
+  }
+  @media (max-width: 600px) {
+    .img-gallery { grid-template-columns: repeat(2, 1fr); gap: 6px; }
+    .img-gallery .gallery-item { height: 120px; }
+  }
+
   /* ============ HELPER BUTTONS ============ */
   .helpers {
     display: flex;
@@ -1124,16 +1213,32 @@
         </div>
       </div>
 
-      <div class="schedule">
-        <div class="schedule-time">14:00<span class="duration">1 ชม.</span></div>
+      <div class="schedule" id="hotel-tokyu-stay">
+        <div class="schedule-time">15:00<span class="duration">~1 ชม.</span></div>
         <div class="schedule-content">
-          <h4>เช็คอิน + พักผ่อน <span class="jp">チェックイン</span></h4>
-          <p>โรงแรมส่วนใหญ่ใน Takayama เดินจากสถานีไม่เกิน 5–10 นาที วางของแล้วลองเดินเล่นรอบสถานีก่อน</p>
+          <h4>เช็คอิน: TOKYU STAY Hida-Takayama Musubi no Yu <span class="jp">東急ステイ飛騨高山 結の湯</span></h4>
+          <p>โรงแรม 4★ ใหม่สวย เปิดปี 2020 · เดินจากสถานี Takayama 7 นาที · รีวิว 4.7/5 — มีรีวิวว่า "best accommodation of our entire Japan trip" · วางของแล้วลองเดินเล่นรอบสถานีก่อน</p>
+          <div class="hotel-info-card">
+            <div class="row"><span class="label">📍 ที่อยู่</span><span class="value">4-301 Hanasatomachi, Takayama-shi, Gifu 506-0026</span></div>
+            <div class="row"><span class="label">📞 โทร</span><span class="value"><a href="tel:+81577361109">+81 577-36-1109</a> (0577-36-1109 ในญี่ปุ่น)</span></div>
+            <div class="row"><span class="label">⏰ Check-in/out</span><span class="value">15:00 / 11:00</span></div>
+            <div class="row"><span class="label">♨️ Onsen</span><span class="value">Indoor onsen น้ำแร่ธรรมชาติ "Musubi no Yu" 結の湯 — เปิด 14:00–02:00 + 05:00–10:00 (ฟรี)</span></div>
+            <div class="row"><span class="label">🍳 Breakfast</span><span class="value">Buffet เช้า Hida specialties (รวมในหลายแพ็กเกจ)</span></div>
+            <div class="row"><span class="label">🚆 Access</span><span class="value">เดิน 7 นาทีจาก JR Takayama Station (ทางออกตะวันออก)</span></div>
+            <div class="row"><span class="label">📶 WiFi</span><span class="value">ฟรีทั่วโรงแรม · มี desk + USB ports ทุกห้อง</span></div>
+            <div class="row"><span class="label">💴 ราคา</span><span class="value">~¥9,000–11,000/คืน (4 คืน Day 1–4)</span></div>
+          </div>
+          <div class="inline-img">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Takayama_Old_Town_(Sanmachi_Suji)_(35819349621).jpg?width=900" alt="Takayama atmosphere near hotel" loading="lazy" onerror="this.parentElement.style.background='linear-gradient(135deg, #2a2a3e, #5a4a3e)';this.style.display='none'">
+            <div class="caption">飛騨高山 · Atmosphere ของ Takayama รอบโรงแรม</div>
+          </div>
           <div class="helpers">
-            <a class="helper-btn map" href="https://www.google.com/maps/search/?api=1&query=Hotel+Around+Takayama" target="_blank" rel="noopener"><span class="ico">📍</span>Hotel Map</a>
-            <a class="helper-btn book" href="https://www.booking.com/searchresults.html?ss=Takayama%2C+Gifu" target="_blank" rel="noopener"><span class="ico">🛏️</span>Booking.com</a>
-            <a class="helper-btn book" href="https://www.agoda.com/city/takayama-jp.html" target="_blank" rel="noopener"><span class="ico">🛏️</span>Agoda</a>
-            <a class="helper-btn book" href="https://www.trip.com/hotels/takayama-hotels-list-3666/" target="_blank" rel="noopener"><span class="ico">🛏️</span>Trip.com</a>
+            <a class="helper-btn map" href="https://www.google.com/maps/search/?api=1&query=Tokyu+Stay+Hida+Takayama+Musubi+no+Yu" target="_blank" rel="noopener"><span class="ico">📍</span>Maps</a>
+            <a class="helper-btn info" href="https://www.tokyustay.co.jp/en/hotel/hida-takayama-gifu/" target="_blank" rel="noopener"><span class="ico">🌐</span>Official EN</a>
+            <a class="helper-btn info" href="https://www.tokyustay.co.jp/en/hotel/hida-takayama-gifu/access/" target="_blank" rel="noopener"><span class="ico">🚶</span>Access</a>
+            <a class="helper-btn book" href="https://www.booking.com/hotel/jp/tokyu-stay-hida-takayama.html" target="_blank" rel="noopener"><span class="ico">🛏️</span>Booking</a>
+            <a class="helper-btn book" href="https://www.agoda.com/tokyu-stay-hida-takayama-musubinoyu/hotel/takayama-jp.html" target="_blank" rel="noopener"><span class="ico">🛏️</span>Agoda</a>
+            <a class="helper-btn book" href="https://www.trip.com/hotels/takayama-hotel-detail-45812907/tokyustay-hidatakayama-musubinoyu/" target="_blank" rel="noopener"><span class="ico">🛏️</span>Trip.com</a>
           </div>
         </div>
       </div>
@@ -1143,9 +1248,15 @@
         <div class="schedule-content">
           <h4>เดินเล่น Sanmachi Suji ครั้งแรก <span class="jp">三町筋</span></h4>
           <p>เดินเล่นเบาๆ ในย่านเมืองเก่า ชิมเนื้อฮิดะปิ้งบนข้าวเหนียวที่ร้าน Tenaga Ashinaga (~¥600), ขนม mitarashi dango, และดูร้านสาเก หลายร้านปิดประมาณ 17:00</p>
-          <div class="inline-img">
-            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Takayama_Old_Town_(Sanmachi_Suji)_(35819349621).jpg?width=900" alt="Sanmachi Suji Takayama" loading="lazy" onerror="this.parentElement.style.background='linear-gradient(135deg, #2a2a3e, #5a4a3e)';this.style.display='none'">
-            <div class="caption">三町筋 · Sanmachi Suji Old Town, Takayama</div>
+          <div class="img-gallery">
+            <div class="gallery-item">
+              <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Takayama_Old_Town_(Sanmachi_Suji)_(35819349621).jpg?width=600" alt="Sanmachi Suji Takayama" loading="lazy" onerror="this.parentElement.style.display='none'">
+              <div class="caption">三町筋 · ถนน Ichi-no-machi</div>
+            </div>
+            <div class="gallery-item">
+              <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Hida-Takayama_Miyagawa_Morning_Market_(15668520238).jpg?width=600" alt="Miyagawa morning market view" loading="lazy" onerror="this.parentElement.style.display='none'">
+              <div class="caption">宮川朝市 · ตลาดเช้า Miyagawa</div>
+            </div>
           </div>
           <div class="meta"><span>เดินไม่เกิน 1 km</span><span>ฟรี</span></div>
           <div class="helpers">
@@ -1160,6 +1271,10 @@
         <div class="schedule-content">
           <h4>มื้อค่ำ: Hida Beef แรกของทริป <span class="jp">飛騨牛</span></h4>
           <p>แนะนำ <strong>Kitchen Hida</strong> (เปิด 17:30, จำเป็นต้องจอง) หรือ <strong>Maruaki</strong> (Hida Beef ระดับ A5 เกรดซื้อกลับได้) ลองสเต็กฮิดะ A5 หรือชาบูเนื้อ</p>
+          <div class="inline-img">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Sushi,_Hida_Beef.jpg?width=900" alt="Hida beef sushi" loading="lazy" onerror="this.parentElement.style.background='linear-gradient(135deg, #8a4a3a, #4a2a1a)';this.style.display='none'">
+            <div class="caption">飛騨牛にぎり · Hida beef sushi (Tabelog Gold ที่ Kotteushi)</div>
+          </div>
           <div class="meta"><span>~¥6,000–10,000/คน</span><span>จองล่วงหน้า</span></div>
           <div class="helpers">
             <a class="helper-btn map" href="https://www.google.com/maps/search/?api=1&query=Kitchen+Hida+Takayama" target="_blank" rel="noopener"><span class="ico">📍</span>Kitchen Hida Map</a>
@@ -1172,15 +1287,16 @@
     </div>
     <div class="stay-bar">
       <div>
-        <div class="stay-label">Tonight's Stay</div>
-        <div class="stay-name">Hotel Around Takayama / Wat Hotel & Spa Hida Takayama <span class="jp">高山</span></div>
-        <div class="stay-price">~¥12,000–18,000/ห้อง · มีออนเซนใน hotel</div>
+        <div class="stay-label">Tonight's Stay · 4 คืนติด (Day 1–4)</div>
+        <div class="stay-name">★ TOKYU STAY Hida-Takayama Musubi no Yu <span class="jp">東急ステイ飛騨高山 結の湯</span></div>
+        <div class="stay-price">~¥9,000–11,000/คืน · 4★ · เดิน 7 นาทีจากสถานี · indoor onsen น้ำแร่ + buffet เช้า · รีวิว 4.7/5</div>
       </div>
       <div class="helpers">
-        <a class="helper-btn" href="https://www.google.com/maps/search/?api=1&query=Hotel+Around+Takayama" target="_blank" rel="noopener"><span class="ico">📍</span>Maps</a>
-        <a class="helper-btn" href="https://hotelaround.com/takayama/" target="_blank" rel="noopener"><span class="ico">🌐</span>Around</a>
-        <a class="helper-btn" href="https://www.booking.com/searchresults.html?ss=Hotel+Around+Takayama" target="_blank" rel="noopener"><span class="ico">🛏️</span>Book</a>
-        <a class="helper-btn" href="https://www.trip.com/hotels/takayama-hotels-list-3666/" target="_blank" rel="noopener"><span class="ico">🛏️</span>Trip.com</a>
+        <a class="helper-btn" href="https://www.google.com/maps/search/?api=1&query=Tokyu+Stay+Hida+Takayama+Musubi+no+Yu" target="_blank" rel="noopener"><span class="ico">📍</span>Maps</a>
+        <a class="helper-btn" href="https://www.tokyustay.co.jp/e/hotel/HIDA/" target="_blank" rel="noopener"><span class="ico">🌐</span>Official</a>
+        <a class="helper-btn" href="https://www.booking.com/hotel/jp/tokyu-stay-hida-takayama-musubi-no-yu.html" target="_blank" rel="noopener"><span class="ico">🛏️</span>Booking</a>
+        <a class="helper-btn" href="https://www.agoda.com/tokyu-stay-hida-takayama-musubi-no-yu/hotel/takayama-jp.html" target="_blank" rel="noopener"><span class="ico">🛏️</span>Agoda</a>
+        <a class="helper-btn" href="https://www.trip.com/hotels/takayama-hotel-detail-43680174/tokyu-stay-hida-takayama-musubi-no-yu/" target="_blank" rel="noopener"><span class="ico">🛏️</span>Trip.com</a>
       </div>
     </div>
   </div>
@@ -1271,6 +1387,21 @@
       </div>
 
       <div class="schedule">
+        <div class="schedule-time">18:00<span class="duration">~30 นาที</span></div>
+        <div class="schedule-content">
+          <h4>กลับที่พัก: TOKYU STAY Hida-Takayama <span class="jp">ホテルへ戻る</span></h4>
+          <p>เดินจาก Takayama Nohi Bus Center 7 นาที · เก็บอุปกรณ์สกี + แช่ออนเซนล้างเมื่อยก่อนออกไปทานข้าว</p>
+          <div class="hotel-back-pill">
+            <span>📞 <a href="tel:+81577361109">+81 577-36-1109</a></span>
+            <span>·</span>
+            <span>♨️ Indoor onsen เปิดถึง 02:00</span>
+            <span>·</span>
+            <span><a href="#hotel-tokyu-stay">ดูรายละเอียดโรงแรม</a></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="schedule">
         <div class="schedule-time">19:00<span class="duration">2 ชม.</span></div>
         <div class="schedule-content">
           <h4>Onsen + อาหารค่ำเรียบง่าย <span class="jp">温泉</span></h4>
@@ -1289,8 +1420,8 @@
     <div class="stay-bar">
       <div>
         <div class="stay-label">Tonight's Stay</div>
-        <div class="stay-name">Hotel Around Takayama (continue) <span class="jp">高山</span></div>
-        <div class="stay-price">~¥12,000–18,000/ห้อง</div>
+        <div class="stay-name">★ TOKYU STAY Hida-Takayama Musubi no Yu (คืนต่อ) <span class="jp">東急ステイ飛騨高山</span></div>
+        <div class="stay-price">~¥9,000–11,000/คืน · indoor onsen + buffet เช้า</div>
       </div>
     </div>
   </div>
@@ -1328,6 +1459,10 @@
         <div class="schedule-content">
           <h4>Asaichi: Miyagawa Morning Market <span class="jp">宮川朝市</span></h4>
           <p>เช้าตรู่เริ่มที่ตลาดเช้าริมแม่น้ำ Miyagawa (เปิด 7:00–12:00) แวะซื้อ sarubobo, มันบดอบ, ผลไม้ดอง, ขนม manju ก่อนนั่งบัสไป Shirakawa-go</p>
+          <div class="inline-img">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Hida-Takayama_Miyagawa_Morning_Market_(15668520238).jpg?width=900" alt="Miyagawa Morning Market" loading="lazy" onerror="this.parentElement.style.background='linear-gradient(135deg, #5a4a3a, #2a1a1a)';this.style.display='none'">
+            <div class="caption">宮川朝市 · ตลาดเช้าริมแม่น้ำ Miyagawa</div>
+          </div>
           <div class="helpers">
             <a class="helper-btn map" href="https://www.google.com/maps/search/?api=1&query=Miyagawa+Morning+Market" target="_blank" rel="noopener"><span class="ico">📍</span>Maps</a>
             <a class="helper-btn info" href="https://www.asaichi.net/" target="_blank" rel="noopener"><span class="ico">🌐</span>Market Info</a>
@@ -1354,9 +1489,19 @@
         <div class="schedule-content">
           <h4>เดินสำรวจ Shirakawa-go <span class="jp">白川郷散策</span></h4>
           <p>หมู่บ้าน UNESCO มีบ้านโบราณกว่า 100 หลัง ลำดับการเดิน:</p>
-          <div class="inline-img">
-            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Shirakawa-go_(2014-06-03).JPG?width=900" alt="Shirakawa-go Ogimachi village" loading="lazy" onerror="this.parentElement.style.background='linear-gradient(135deg, #5a5a4e, #2a2a2e)';this.style.display='none'">
-            <div class="caption">白川郷 荻町 · Ogimachi Village from Shiroyama Viewpoint</div>
+          <div class="img-gallery">
+            <div class="gallery-item">
+              <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Shirakawa-go_(2014-06-03).JPG?width=600" alt="Shirakawa-go from Shiroyama" loading="lazy" onerror="this.parentElement.style.display='none'">
+              <div class="caption">白川郷 荻町 · จาก Shiroyama Viewpoint</div>
+            </div>
+            <div class="gallery-item">
+              <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Wada_House-02.jpg?width=600" alt="Wada House Shirakawa-go" loading="lazy" onerror="this.parentElement.style.display='none'">
+              <div class="caption">和田家 · Wada House (cultural property)</div>
+            </div>
+            <div class="gallery-item">
+              <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Shirakawa-hachiman-jinja_winter.JPG?width=600" alt="Shirakawa-go winter snow" loading="lazy" onerror="this.parentElement.style.display='none'">
+              <div class="caption">冬の白川郷 · ฤดูหนาวพร้อมหิมะ</div>
+            </div>
           </div>
           <ul style="margin-top: 10px; padding-left: 20px; color: var(--ink-soft); font-size: 14px; line-height: 1.9;">
             <li><strong>Shiroyama Viewpoint</strong> (ชั่วโมงแรกขึ้นไปก่อนคนเยอะ) — เดินขึ้นเขา 15 นาที หรือนั่งรถบัส 5 นาที ¥200 ดูวิวหมู่บ้านปกคลุมหิมะแบบ panorama</li>
@@ -1395,6 +1540,21 @@
       </div>
 
       <div class="schedule">
+        <div class="schedule-time">17:00<span class="duration">~30 นาที</span></div>
+        <div class="schedule-content">
+          <h4>กลับที่พัก: TOKYU STAY Hida-Takayama <span class="jp">ホテルへ戻る</span></h4>
+          <p>ลงรถบัสที่ Takayama Nohi Bus Center · เดินกลับโรงแรม 7 นาที · พักผ่อนสั้นๆ ก่อนออกไปทานข้าว</p>
+          <div class="hotel-back-pill">
+            <span>📞 <a href="tel:+81577361109">+81 577-36-1109</a></span>
+            <span>·</span>
+            <span>♨️ Onsen เปิด 14:00–02:00</span>
+            <span>·</span>
+            <span><a href="#hotel-tokyu-stay">ดูรายละเอียดโรงแรม</a></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="schedule">
         <div class="schedule-time">18:30<span class="duration">2 ชม.</span></div>
         <div class="schedule-content">
           <h4>Dinner: Sushi เนื้อ Hida ที่ Sakaguchiya <span class="jp">飛騨牛にぎり</span></h4>
@@ -1409,8 +1569,8 @@
     <div class="stay-bar">
       <div>
         <div class="stay-label">Tonight's Stay</div>
-        <div class="stay-name">Hotel Around Takayama (continue) <span class="jp">高山</span></div>
-        <div class="stay-price">~¥12,000–18,000/ห้อง</div>
+        <div class="stay-name">★ TOKYU STAY Hida-Takayama Musubi no Yu (คืนต่อ) <span class="jp">東急ステイ飛騨高山</span></div>
+        <div class="stay-price">~¥9,000–11,000/คืน · indoor onsen + buffet เช้า</div>
       </div>
     </div>
   </div>
@@ -1461,6 +1621,20 @@
         <div class="schedule-content">
           <h4>Takayama Jinya <span class="jp">高山陣屋</span></h4>
           <p>อาคารที่ทำการเก่ายุค Edo เพียงแห่งเดียวที่ยังเหลือในญี่ปุ่น มีห้องบัญชี, ห้องสอบสวน, ครัวเก่า, ยุ้งข้าว เปิด 8:45–17:00</p>
+          <div class="img-gallery">
+            <div class="gallery-item">
+              <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Entrance_of_Takayama_Jinya_House_in_a_snowy_day.JPG?width=600" alt="Takayama Jinya entrance snow" loading="lazy" onerror="this.parentElement.style.display='none'">
+              <div class="caption">高山陣屋 表玄関 · ทางเข้าฤดูหนาว</div>
+            </div>
+            <div class="gallery-item">
+              <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Takayama_Jinya_inside_view_201706.jpg?width=600" alt="Takayama Jinya interior" loading="lazy" onerror="this.parentElement.style.display='none'">
+              <div class="caption">陣屋内 · Tatami room ด้านใน</div>
+            </div>
+            <div class="gallery-item">
+              <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Takayama_Jinya_Garden_2017.JPG?width=600" alt="Takayama Jinya garden" loading="lazy" onerror="this.parentElement.style.display='none'">
+              <div class="caption">陣屋庭園 · สวนญี่ปุ่นด้านหลัง</div>
+            </div>
+          </div>
           <div class="meta"><span>¥440</span><span>มี audio guide ภาษาอังกฤษ</span></div>
           <div class="helpers">
             <a class="helper-btn map" href="https://www.google.com/maps/search/?api=1&query=Takayama+Jinya" target="_blank" rel="noopener"><span class="ico">📍</span>Maps</a>
@@ -1512,6 +1686,10 @@
         <div class="schedule-content">
           <h4>Hida Folk Village <span class="jp">飛騨の里</span></h4>
           <p>หมู่บ้านเปิด-โล่งจัดแสดงบ้านโบราณ 30+ หลังจากภูมิภาค Hida ในช่วงหิมะมีสภาพเหมือน Shirakawa-go เลย แต่คนน้อยกว่ามาก เปิด 8:30–17:00 รถ Sarubobo Bus จากสถานี 10 นาที (¥210)</p>
+          <div class="inline-img">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Hida_Folk_Village.jpg?width=900" alt="Hida Folk Village" loading="lazy" onerror="this.parentElement.style.background='linear-gradient(135deg, #5a4a3a, #2a1a1a)';this.style.display='none'">
+            <div class="caption">飛騨の里 · Hida Folk Village (open-air museum)</div>
+          </div>
           <div class="meta"><span>¥700</span><span>เดินรอบ ~2 ชม.</span></div>
           <div class="note-box">
             <span class="note-label">Alternative:</span> ถ้ามีพลังเหลือ ลองเดิน Higashiyama Walking Course (3.5 km) ผ่านวัด 10 แห่งแบบ Kyoto-mini · หรือ Yatai Kaikan + Sakurayama Hachimangu (รถลาก festival)
@@ -1520,6 +1698,21 @@
             <a class="helper-btn map" href="https://www.google.com/maps/search/?api=1&query=Hida+Folk+Village+Hidanosato" target="_blank" rel="noopener"><span class="ico">📍</span>Maps</a>
             <a class="helper-btn info" href="https://www.hidanosato-tpo.jp/english.html" target="_blank" rel="noopener"><span class="ico">🌐</span>Folk Village</a>
             <a class="helper-btn info" href="https://www.hidatakayama.or.jp/en/things-to-do/higashiyama-walking-course/" target="_blank" rel="noopener"><span class="ico">🌐</span>Higashiyama</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="schedule">
+        <div class="schedule-time">17:30<span class="duration">~30 นาที</span></div>
+        <div class="schedule-content">
+          <h4>กลับที่พัก: TOKYU STAY Hida-Takayama <span class="jp">ホテルへ戻る</span></h4>
+          <p>นั่ง Sarubobo Bus จาก Hida Folk Village กลับสถานี (~10 นาที, ¥210) แล้วเดินกลับโรงแรม · พักก่อนออกไปทานข้าวเย็น</p>
+          <div class="hotel-back-pill">
+            <span>📞 <a href="tel:+81577361109">+81 577-36-1109</a></span>
+            <span>·</span>
+            <span>♨️ Onsen ก่อนกินข้าว</span>
+            <span>·</span>
+            <span><a href="#hotel-tokyu-stay">ดูรายละเอียดโรงแรม</a></span>
           </div>
         </div>
       </div>
@@ -1540,8 +1733,8 @@
     <div class="stay-bar">
       <div>
         <div class="stay-label">Tonight's Stay</div>
-        <div class="stay-name">Hotel Around Takayama (continue) <span class="jp">高山</span></div>
-        <div class="stay-price">~¥12,000–18,000/ห้อง</div>
+        <div class="stay-name">★ TOKYU STAY Hida-Takayama Musubi no Yu (คืนต่อ) <span class="jp">東急ステイ飛騨高山</span></div>
+        <div class="stay-price">~¥9,000–11,000/คืน · indoor onsen + buffet เช้า</div>
       </div>
     </div>
   </div>
@@ -1629,11 +1822,42 @@
         </div>
       </div>
 
-      <div class="schedule">
-        <div class="schedule-time">15:30<span class="duration">~30 นาที</span></div>
+      <div class="schedule" id="hotel-yarimikan">
+        <div class="schedule-time">15:30<span class="duration">~1 ชม.</span></div>
         <div class="schedule-content">
-          <h4>เดินทางไปออนเซน Hirayu / Shinhotaka <span class="jp">温泉地へ</span></h4>
-          <p>เช็คอิน ryokan โดย Nohi bus หรือ taxi กลับ Hirayu Onsen หรือพักใกล้ Shinhotaka Onsen เลย</p>
+          <h4>เช็คอิน Ryokan: Yarimikan <span class="jp">槍見舘</span></h4>
+          <p>Ryokan ระดับ destination · บ้านไม้แบบฟาร์มเฮาส์ Hida ริมแม่น้ำ Gamada · มี <strong>7 rotenburo</strong> ทั้งแบบรวม + แยก + private · เช็คอินจาก 14:00 เก็บกระเป๋าแล้วใส่ yukata เริ่มแช่ออนเซน + เตรียมตัวสำหรับ kaiseki</p>
+          <div class="hotel-info-card">
+            <div class="row"><span class="label">📍 ที่อยู่</span><span class="value">587 Okuhida Onsengo Kansaka, Takayama-shi, Gifu 506-1421</span></div>
+            <div class="row"><span class="label">📞 โทร</span><span class="value"><a href="tel:+81578892808">+81 578-89-2808</a> (0578-89-2808 ในญี่ปุ่น)</span></div>
+            <div class="row"><span class="label">⏰ Check-in/out</span><span class="value">14:00 / 11:00</span></div>
+            <div class="row"><span class="label">♨️ Rotenburo</span><span class="value">7 บ่อ — Daiyokujo, Yarimi (ริมแม่น้ำ), Yamaonna, Kakure-no-yu (mixed/private), Yamaotoko, Yamabuki, Yumotonoyu · เปิด 24 ชม.</span></div>
+            <div class="row"><span class="label">🍱 Dinner</span><span class="value">Kaiseki ในห้อง Tatami หรือห้องส่วนตัว · ลูกค้าเลือก: Hida beef shabu / Hida beef sushi / sashimi mountain · เริ่ม 18:00 หรือ 18:30</span></div>
+            <div class="row"><span class="label">🍳 Breakfast</span><span class="value">เช้าญี่ปุ่นแท้ — ปลาย่าง, มิโซะ, อนเซน-tamago, ผักมัตสึริ ฯลฯ · 7:30–9:00</span></div>
+            <div class="row"><span class="label">🚌 Access</span><span class="value">Nohi Bus จาก Hirayu Onsen ลงที่ป้าย "Yarimikan-mae" (ริมถนน 471) เดิน 3 นาที · มี <strong>shuttle ฟรี</strong> รับ-ส่งจาก Hirayu Bus Terminal (โทรนัด)</span></div>
+            <div class="row"><span class="label">📶 WiFi</span><span class="value">ฟรีในห้องและ lobby</span></div>
+            <div class="row"><span class="label">💴 ราคา</span><span class="value">~¥30,000–40,000/คน · รวม kaiseki + เช้า · 1 คืน (Day 5)</span></div>
+            <div class="row"><span class="label">⚠ Note</span><span class="value">รอยสัก: ตรวจสอบกับโรงแรม · ผู้สัก ใช้ private rotenburo (Kakure-no-yu) ได้</span></div>
+          </div>
+          <div class="img-gallery">
+            <div class="gallery-item">
+              <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Tsurunoyu_onsen_rotenburo.JPG?width=600" alt="Rotenburo bath" loading="lazy" onerror="this.parentElement.style.display='none'">
+              <div class="caption">露天風呂 · Rotenburo style ริมแม่น้ำ</div>
+            </div>
+            <div class="gallery-item">
+              <img src="https://commons.wikimedia.org/wiki/Special:FilePath/071123_Hotaka_Mountains_view_from_Nishihotaka-guchi_Station_Shinhotaka_Ropeway_Japan01s.jpg?width=600" alt="Hotaka mountains" loading="lazy" onerror="this.parentElement.style.display='none'">
+              <div class="caption">奥飛騨 · ภูเขา Hotaka รอบโรงแรม</div>
+            </div>
+          </div>
+          <div class="helpers">
+            <a class="helper-btn map" href="https://www.google.com/maps/search/?api=1&query=Yarimikan+Okuhida" target="_blank" rel="noopener"><span class="ico">📍</span>Maps</a>
+            <a class="helper-btn info" href="https://www.yarimikan.com/" target="_blank" rel="noopener"><span class="ico">🌐</span>Official</a>
+            <a class="helper-btn info" href="https://okuhida.or.jp/en/p/stay/%E6%A7%8D%E8%A6%8B%E9%A4%A8/" target="_blank" rel="noopener"><span class="ico">🌐</span>Okuhida Guide</a>
+            <a class="helper-btn info" href="https://www.tripadvisor.com/Hotel_Review-g298113-d1090205-Reviews-Yarimikan-Takayama_Gifu_Prefecture_Tokai_Chubu.html" target="_blank" rel="noopener"><span class="ico">⭐</span>Reviews</a>
+            <a class="helper-btn book" href="https://www.booking.com/hotel/jp/yarimikan.html" target="_blank" rel="noopener"><span class="ico">🛏️</span>Booking</a>
+            <a class="helper-btn book" href="https://www.agoda.com/yariminoyu-yarimikan-h9074459/hotel/takayama-jp.html" target="_blank" rel="noopener"><span class="ico">🛏️</span>Agoda</a>
+            <a class="helper-btn book" href="https://us.trip.com/hotels/takayama-hotel-detail-21830108/yarimikan/" target="_blank" rel="noopener"><span class="ico">🛏️</span>Trip.com</a>
+          </div>
         </div>
       </div>
 
@@ -1666,16 +1890,17 @@
     </div>
     <div class="stay-bar">
       <div>
-        <div class="stay-label">Tonight's Stay (Splurge)</div>
-        <div class="stay-name">Yumotokan / Hotaka-so Yamano Hotel / Yarimikan <span class="jp">奥飛騨温泉郷</span></div>
-        <div class="stay-price">~¥30,000–50,000/ห้อง · รวมอาหารเช้า/เย็น kaiseki</div>
+        <div class="stay-label">Tonight's Stay (Splurge · 1 คืน)</div>
+        <div class="stay-name">★ Yarimikan <span class="jp">槍見舘</span></div>
+        <div class="stay-price">~¥30,000–40,000/คน (2 คน 1 ห้อง) · รวม kaiseki + เช้า · 7 rotenburo ริมแม่น้ำ Gamada · รีวิว Tripadvisor 4.5/5</div>
       </div>
       <div class="helpers">
-        <a class="helper-btn" href="https://www.google.com/maps/search/?api=1&query=Yarimikan+Okuhida" target="_blank" rel="noopener"><span class="ico">📍</span>Yarimikan</a>
-        <a class="helper-btn" href="https://www.yarimikan.com/" target="_blank" rel="noopener"><span class="ico">🌐</span>Yarimikan Web</a>
-        <a class="helper-btn" href="https://www.yumotokan.co.jp/" target="_blank" rel="noopener"><span class="ico">🌐</span>Yumotokan</a>
-        <a class="helper-btn" href="https://www.booking.com/searchresults.html?ss=Okuhida+Onsen" target="_blank" rel="noopener"><span class="ico">🛏️</span>Booking</a>
-        <a class="helper-btn" href="https://www.trip.com/hotels/list?city=3666&searchKeyword=Okuhida+Onsen" target="_blank" rel="noopener"><span class="ico">🛏️</span>Trip.com</a>
+        <a class="helper-btn" href="https://www.google.com/maps/search/?api=1&query=Yarimikan+Okuhida" target="_blank" rel="noopener"><span class="ico">📍</span>Maps</a>
+        <a class="helper-btn" href="https://www.yarimikan.com/" target="_blank" rel="noopener"><span class="ico">🌐</span>Official</a>
+        <a class="helper-btn" href="https://www.tripadvisor.com/Hotel_Review-g298113-d1090205-Reviews-Yarimikan-Takayama_Gifu_Prefecture_Tokai_Chubu.html" target="_blank" rel="noopener"><span class="ico">⭐</span>Reviews</a>
+        <a class="helper-btn" href="https://www.booking.com/hotel/jp/yarimikan.html" target="_blank" rel="noopener"><span class="ico">🛏️</span>Booking</a>
+        <a class="helper-btn" href="https://www.agoda.com/yarimikan/hotel/takayama-jp.html" target="_blank" rel="noopener"><span class="ico">🛏️</span>Agoda</a>
+        <a class="helper-btn" href="https://us.trip.com/hotels/takayama-hotel-detail-21830108/yarimikan/" target="_blank" rel="noopener"><span class="ico">🛏️</span>Trip.com</a>
       </div>
     </div>
   </div>
@@ -1749,17 +1974,33 @@
         </div>
       </div>
 
-      <div class="schedule">
-        <div class="schedule-time">17:30<span class="duration">1 ชม.</span></div>
+      <div class="schedule" id="hotel-mitsui-garden">
+        <div class="schedule-time">17:30<span class="duration">~1 ชม.</span></div>
         <div class="schedule-content">
-          <h4>เช็คอินโรงแรมใน Nagoya <span class="jp">チェックイン</span></h4>
-          <p>โรงแรมแนะนำใกล้สถานี Nagoya ระดับ business hotel: Mitsui Garden Hotel Nagoya Premier, Daiwa Roynet, Comfort Hotel Premium · หากอยากระดับสูงไป Nagoya Marriott Associa (ในตัว JR Tower)</p>
+          <h4>เช็คอิน: Mitsui Garden Hotel Nagoya Premier <span class="jp">三井ガーデンホテル名古屋プレミア</span></h4>
+          <p>โรงแรม 4★ ใจกลาง Meieki · เดิน 5 นาทีจาก JR Nagoya Station · มี <strong>top-floor sky lobby + onsen</strong> วิวเมืองนาโกย่ารอบทิศ · รีวิว 4.4/5 — เด่นเรื่องห้องเงียบสงบและพนักงาน · เช็คอินเสร็จออกไปทาน Tebasaki ต่อ</p>
+          <div class="hotel-info-card">
+            <div class="row"><span class="label">📍 ที่อยู่</span><span class="value">4-11-27 Meieki, Nakamura-ku, Nagoya-shi, Aichi 450-0002</span></div>
+            <div class="row"><span class="label">📞 โทร</span><span class="value"><a href="tel:+81525871131">+81 52-587-1131</a> (052-587-1131 ในญี่ปุ่น)</span></div>
+            <div class="row"><span class="label">📧 Email</span><span class="value"><a href="mailto:nagoya_front@gardenhotels.co.jp">nagoya_front@gardenhotels.co.jp</a></span></div>
+            <div class="row"><span class="label">⏰ Check-in/out</span><span class="value">15:00 / 11:00</span></div>
+            <div class="row"><span class="label">♨️ Onsen</span><span class="value">Top-floor sky onsen "Hinoki Bath" 檜風呂 · เปิด 15:00–02:00 + 05:00–10:00 (ฟรี)</span></div>
+            <div class="row"><span class="label">🍳 Breakfast</span><span class="value">Buffet เช้า ¥2,800/คน · มีอาหารไทย-ญี่ปุ่น-ตะวันตก</span></div>
+            <div class="row"><span class="label">🚆 Access</span><span class="value">เดิน 5 นาทีจาก JR Nagoya Sta. ทางออก Sakuradori · 8 นาทีจาก Meitetsu/Kintetsu Nagoya</span></div>
+            <div class="row"><span class="label">📶 WiFi</span><span class="value">ฟรีทั่วโรงแรม · มี desk ขนาดใหญ่ + USB charging</span></div>
+            <div class="row"><span class="label">💴 ราคา</span><span class="value">~¥10,000–13,000/คืน (3 คืน Day 6–8)</span></div>
+          </div>
+          <div class="inline-img">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Nagoya_Sakae_area_from_Midland_Square.JPG?width=900" alt="Nagoya skyline near hotel" loading="lazy" onerror="this.parentElement.style.background='linear-gradient(135deg, #2a2a3e, #5a4a3e)';this.style.display='none'">
+            <div class="caption">名古屋駅周辺 · วิวเมืองนาโกย่าจาก sky bar (รอบโรงแรม)</div>
+          </div>
           <div class="helpers">
             <a class="helper-btn map" href="https://www.google.com/maps/search/?api=1&query=Mitsui+Garden+Hotel+Nagoya+Premier" target="_blank" rel="noopener"><span class="ico">📍</span>Maps</a>
-            <a class="helper-btn book" href="https://www.gardenhotels.co.jp/en/nagoya-premier/" target="_blank" rel="noopener"><span class="ico">🛏️</span>Mitsui Garden</a>
-            <a class="helper-btn book" href="https://www.booking.com/searchresults.html?ss=Nagoya+Station" target="_blank" rel="noopener"><span class="ico">🛏️</span>Booking</a>
-            <a class="helper-btn book" href="https://www.agoda.com/city/nagoya-jp.html" target="_blank" rel="noopener"><span class="ico">🛏️</span>Agoda</a>
-            <a class="helper-btn book" href="https://www.trip.com/hotels/nagoya-hotels-list-3661/" target="_blank" rel="noopener"><span class="ico">🛏️</span>Trip.com</a>
+            <a class="helper-btn info" href="https://www.gardenhotels.co.jp/nagoya-premier/eng/" target="_blank" rel="noopener"><span class="ico">🌐</span>Official EN</a>
+            <a class="helper-btn info" href="https://www.tripadvisor.com/Hotel_Review-g298106-d10197390-Reviews-Mitsui_Garden_Hotel_Nagoya_Premier-Nagoya_Aichi_Prefecture_Tokai_Chubu.html" target="_blank" rel="noopener"><span class="ico">⭐</span>Reviews</a>
+            <a class="helper-btn book" href="https://www.booking.com/hotel/jp/mitsui-garden-nagoya-premier.html" target="_blank" rel="noopener"><span class="ico">🛏️</span>Booking</a>
+            <a class="helper-btn book" href="https://www.agoda.com/mitsui-garden-hotel-nagoya-premier/hotel/nagoya-jp.html" target="_blank" rel="noopener"><span class="ico">🛏️</span>Agoda</a>
+            <a class="helper-btn book" href="https://www.trip.com/hotels/nagoya-hotel-detail-2042283/mitsui-garden-hotel-nagoya-premier/" target="_blank" rel="noopener"><span class="ico">🛏️</span>Trip.com</a>
           </div>
         </div>
       </div>
@@ -1769,6 +2010,10 @@
         <div class="schedule-content">
           <h4>Dinner: Tebasaki Chicken Wings <span class="jp">手羽先</span></h4>
           <p>ปีกไก่ทอดสไตล์ Nagoya — ลอง Yamachan (Sekai no Yamachan) สาขา Sakae หรือ Furaibou ใน Esca ใต้สถานี Nagoya · ลอง Tebasaki + Doteni (เนื้อตุ๋นมิโซะ) + เบียร์</p>
+          <div class="inline-img">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Tebasaki_karaage_by_kawanet_in_Kanayama,_Nagoya.jpg?width=900" alt="Tebasaki chicken wings Nagoya" loading="lazy" onerror="this.parentElement.style.background='linear-gradient(135deg, #8a4a3a, #4a2a1a)';this.style.display='none'">
+            <div class="caption">手羽先唐揚げ · Tebasaki Karaage Nagoya-style</div>
+          </div>
           <div class="note-box">
             <span class="note-label">Setsubun 節分:</span> 3 ก.พ. คือวัน Setsubun (วันก่อนเริ่มฤดูใบไม้ผลิตามปฏิทินจันทรคติ) ถ้าทันเวลา ลองไป <strong>Osu Kannon Temple</strong> หรือ <strong>Atsuta Jingu</strong> ดูพิธี <em>mamemaki</em> โปรยถั่วขับไล่ปีศาจ — มักจัดช่วงบ่าย-เย็น
           </div>
@@ -1784,9 +2029,17 @@
     </div>
     <div class="stay-bar">
       <div>
-        <div class="stay-label">Tonight's Stay</div>
-        <div class="stay-name">Mitsui Garden Hotel Nagoya Premier <span class="jp">名古屋</span></div>
-        <div class="stay-price">~¥10,000–15,000/ห้อง · ใกล้สถานี</div>
+        <div class="stay-label">Tonight's Stay · 3 คืนติด (Day 6–8)</div>
+        <div class="stay-name">★ Mitsui Garden Hotel Nagoya Premier <span class="jp">三井ガーデンホテル名古屋プレミア</span></div>
+        <div class="stay-price">~¥10,000–13,000/คืน · 4★ · เดิน 5 นาทีจากสถานี · top-floor sky lobby + onsen · รีวิว 4.4/5</div>
+      </div>
+      <div class="helpers">
+        <a class="helper-btn" href="https://www.google.com/maps/search/?api=1&query=Mitsui+Garden+Hotel+Nagoya+Premier" target="_blank" rel="noopener"><span class="ico">📍</span>Maps</a>
+        <a class="helper-btn" href="https://www.gardenhotels.co.jp/en/nagoya-premier/" target="_blank" rel="noopener"><span class="ico">🌐</span>Official</a>
+        <a class="helper-btn" href="https://www.tripadvisor.com/Hotel_Review-g298106-d10197390-Reviews-Mitsui_Garden_Hotel_Nagoya_Premier-Nagoya_Aichi_Prefecture_Tokai_Chubu.html" target="_blank" rel="noopener"><span class="ico">⭐</span>Reviews</a>
+        <a class="helper-btn" href="https://www.booking.com/hotel/jp/mitsui-garden-nagoya-premier.html" target="_blank" rel="noopener"><span class="ico">🛏️</span>Booking</a>
+        <a class="helper-btn" href="https://www.agoda.com/mitsui-garden-hotel-nagoya-premier/hotel/nagoya-jp.html" target="_blank" rel="noopener"><span class="ico">🛏️</span>Agoda</a>
+        <a class="helper-btn" href="https://www.trip.com/hotels/nagoya-hotel-detail-2042283/mitsui-garden-hotel-nagoya-premier/" target="_blank" rel="noopener"><span class="ico">🛏️</span>Trip.com</a>
       </div>
     </div>
   </div>
@@ -1825,9 +2078,23 @@
         <div class="schedule-content">
           <h4>Nagoya Castle + Honmaru Palace <span class="jp">名古屋城・本丸御殿</span></h4>
           <p>ปราสาทนาโกย่า สร้างปี 1612 โดย Tokugawa Ieyasu มี <strong>Golden Shachihoko (ปลาทอง)</strong> บนยอดเป็นเอกลักษณ์ · เปิด 9:00–16:30, ตั๋ว ¥500</p>
-          <div class="inline-img">
-            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Old_Nagoya_Castle.JPG?width=900" alt="Nagoya Castle" loading="lazy" onerror="this.parentElement.style.background='linear-gradient(135deg, #6a4a3a, #2a1a1a)';this.style.display='none'">
-            <div class="caption">名古屋城 · Nagoya Castle with Golden Shachihoko</div>
+          <div class="img-gallery">
+            <div class="gallery-item">
+              <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Old_Nagoya_Castle.JPG?width=600" alt="Nagoya Castle exterior" loading="lazy" onerror="this.parentElement.style.display='none'">
+              <div class="caption">名古屋城 · ภาพคลาสสิคพร้อม Shachihoko</div>
+            </div>
+            <div class="gallery-item">
+              <img src="https://commons.wikimedia.org/wiki/Special:FilePath/180330_Tenshu_and_Honmaru_Goten_of_Nagoya_castle.jpg?width=600" alt="Tenshu and Honmaru Goten" loading="lazy" onerror="this.parentElement.style.display='none'">
+              <div class="caption">天守 + 本丸御殿 · Tenshu + Honmaru Palace</div>
+            </div>
+            <div class="gallery-item">
+              <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Nagoya_Castle_Honmaru_Goten_(22).JPG?width=600" alt="Honmaru Palace interior" loading="lazy" onerror="this.parentElement.style.display='none'">
+              <div class="caption">本丸御殿 · ภายในจิตรกรรม Kano school</div>
+            </div>
+            <div class="gallery-item">
+              <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Inside_view_of_Hommaru_Palace_of_Nagoya_Castle_10.JPG?width=600" alt="Honmaru Palace inside" loading="lazy" onerror="this.parentElement.style.display='none'">
+              <div class="caption">本丸御殿内部 · ห้อง Tatami ประดับทอง</div>
+            </div>
           </div>
           <ul style="margin-top: 10px; padding-left: 20px; color: var(--ink-soft); font-size: 14px; line-height: 1.9;">
             <li><strong>Honmaru Palace</strong> (รวมในตั๋ว) — บูรณะเสร็จปี 2018 จิตรกรรมประตูสีทองของ Kano school สวยมาก ห้ามพลาด</li>
@@ -1852,6 +2119,10 @@
         <div class="schedule-content">
           <h4>Lunch: Hitsumabushi (เมนูปลาไหลขึ้นชื่อ Nagoya) <span class="jp">ひつまぶし</span></h4>
           <p>ที่ <strong>Atsuta Horaiken</strong> (ขึ้นชื่อ 150+ ปี, มีสาขาหลายแห่งรวมที่ Atsuta) หรือ <strong>Maruya Honten</strong> สาขา Esca ใต้สถานี · กิน 3 วิธี: ตามปกติ, ใส่เครื่องเคียง, ใส่ dashi เป็น ochazuke</p>
+          <div class="inline-img">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Hitsumabushi_1.jpg?width=900" alt="Hitsumabushi eel rice" loading="lazy" onerror="this.parentElement.style.background='linear-gradient(135deg, #8a4a3a, #4a2a1a)';this.style.display='none'">
+            <div class="caption">ひつまぶし · Hitsumabushi (Nagoya-style grilled eel on rice)</div>
+          </div>
           <div class="meta"><span>~¥4,000–5,000/คน</span><span>คิวยาว เผื่อเวลา</span></div>
           <div class="helpers">
             <a class="helper-btn map" href="https://www.google.com/maps/search/?api=1&query=Atsuta+Horaiken+Honten" target="_blank" rel="noopener"><span class="ico">📍</span>Horaiken</a>
@@ -1867,9 +2138,15 @@
         <div class="schedule-content">
           <h4>Atsuta Shrine <span class="jp">熱田神宮</span></h4>
           <p>ศาลเจ้าศักดิ์สิทธิ์อันดับ 2 ของญี่ปุ่นรองจาก Ise Jingu ประดิษฐาน Kusanagi-no-tsurugi (ดาบศักดิ์สิทธิ์) — ป่าโบราณ 600,000 ตร.ม. กลางเมือง · เดินรอบประมาณ 1 ชม.</p>
-          <div class="inline-img">
-            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Atsuta-jinguu_shoumen.JPG?width=900" alt="Atsuta Shrine" loading="lazy" onerror="this.parentElement.style.background='linear-gradient(135deg, #4a6a4a, #1a3a1a)';this.style.display='none'">
-            <div class="caption">熱田神宮 · Atsuta Jingu Shrine forest path</div>
+          <div class="img-gallery">
+            <div class="gallery-item">
+              <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Atsuta-jinguu_shoumen.JPG?width=600" alt="Atsuta Shrine main hall" loading="lazy" onerror="this.parentElement.style.display='none'">
+              <div class="caption">熱田神宮 拝殿 · ศาลาบูชาหลัก</div>
+            </div>
+            <div class="gallery-item">
+              <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Atsuta-jinguu_keidai.JPG?width=600" alt="Atsuta Shrine grounds forest" loading="lazy" onerror="this.parentElement.style.display='none'">
+              <div class="caption">熱田神宮 境内 · ป่าศักดิ์สิทธิ์ 600,000 m²</div>
+            </div>
           </div>
           <div class="meta"><span>ฟรี</span><span>เปิดตลอดเวลา</span></div>
           <div class="helpers">
@@ -1884,6 +2161,24 @@
         <div class="schedule-content">
           <h4>Sakae: Shopping & City Lights <span class="jp">栄</span></h4>
           <p>ย่าน Sakae เป็นใจกลางช้อป-เที่ยวของ Nagoya:</p>
+          <div class="img-gallery">
+            <div class="gallery-item">
+              <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Street_view_of_Sakae,_Nagoya_at_night_20150124.JPG?width=600" alt="Sakae night street" loading="lazy" onerror="this.parentElement.style.display='none'">
+              <div class="caption">栄 夜景 · ถนน Sakae ตอนกลางคืน</div>
+            </div>
+            <div class="gallery-item">
+              <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Hisaya_Ōdori_Park_(Nagoya_TV_Tower_n1).JPG?width=600" alt="Nagoya TV Tower" loading="lazy" onerror="this.parentElement.style.display='none'">
+              <div class="caption">名古屋テレビ塔 · Mirai Tower (TV Tower)</div>
+            </div>
+            <div class="gallery-item">
+              <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Oasis_21_-_Sakae_Bus_Terminal_-_01.JPG?width=600" alt="Oasis 21 Sakae" loading="lazy" onerror="this.parentElement.style.display='none'">
+              <div class="caption">オアシス21 · เรือแก้วลอยฟ้า</div>
+            </div>
+            <div class="gallery-item">
+              <img src="https://commons.wikimedia.org/wiki/Special:FilePath/RAYARD_Hisaya-odori_Park_and_Nagoya_TV_Tower_-_1.jpg?width=600" alt="Hisaya Odori Park" loading="lazy" onerror="this.parentElement.style.display='none'">
+              <div class="caption">久屋大通公園 · Hisaya Odori Park (renovated 2020)</div>
+            </div>
+          </div>
           <ul style="margin-top: 10px; padding-left: 20px; color: var(--ink-soft); font-size: 14px; line-height: 1.9;">
             <li><strong>Mitsukoshi, Lachic, Parco</strong> — ห้างเดินเชื่อมกัน</li>
             <li><strong>Oasis 21</strong> — โครงสร้างเรือลอยฟ้า มี shopping mall ใต้ดิน</li>
@@ -1913,12 +2208,27 @@
           </div>
         </div>
       </div>
+
+      <div class="schedule">
+        <div class="schedule-time">21:30<span class="duration">~30 นาที</span></div>
+        <div class="schedule-content">
+          <h4>กลับที่พัก: Mitsui Garden Hotel <span class="jp">ホテルへ戻る</span></h4>
+          <p>นั่ง subway สาย Higashiyama จาก Sakae → Nagoya 5 นาที (¥210) แล้วเดิน 5 นาที · กลับถึงโรงแรมขึ้นไปแช่ sky onsen ชั้นบนสุดวิวกลางคืน</p>
+          <div class="hotel-back-pill">
+            <span>📞 <a href="tel:+81525871131">+81 52-587-1131</a></span>
+            <span>·</span>
+            <span>♨️ Sky onsen เปิดถึง 02:00</span>
+            <span>·</span>
+            <span><a href="#hotel-mitsui-garden">ดูรายละเอียดโรงแรม</a></span>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="stay-bar">
       <div>
         <div class="stay-label">Tonight's Stay</div>
-        <div class="stay-name">Mitsui Garden Hotel Nagoya Premier (continue) <span class="jp">名古屋</span></div>
-        <div class="stay-price">~¥10,000–15,000/ห้อง</div>
+        <div class="stay-name">★ Mitsui Garden Hotel Nagoya Premier (คืนต่อ) <span class="jp">三井ガーデンホテル</span></div>
+        <div class="stay-price">~¥10,000–13,000/คืน · top-floor sky lobby + onsen</div>
       </div>
     </div>
   </div>
@@ -2037,16 +2347,25 @@
       <div class="schedule">
         <div class="schedule-time">22:00<span class="duration">1 ชม.</span></div>
         <div class="schedule-content">
-          <h4>Pack + เตรียมตัวกลับ <span class="jp">パッキング</span></h4>
-          <p>เก็บกระเป๋า เตรียมเช็คอินออนไลน์ของสายการบิน เผื่อนำของฝากที่ฝาก hotel mailing service ไปสนามบินก็ได้</p>
+          <h4>กลับที่พัก + Pack + เตรียมตัวกลับ <span class="jp">パッキング</span></h4>
+          <p>เก็บกระเป๋า เตรียมเช็คอินออนไลน์ของสายการบิน เผื่อนำของฝากที่ฝาก hotel mailing service ไปสนามบินก็ได้ · แช่ sky onsen รอบสุดท้ายก่อนเข้านอน</p>
+          <div class="hotel-back-pill">
+            <span>📞 <a href="tel:+81525871131">+81 52-587-1131</a></span>
+            <span>·</span>
+            <span>📧 <a href="mailto:nagoya_front@gardenhotels.co.jp">nagoya_front@gardenhotels.co.jp</a></span>
+            <span>·</span>
+            <span>🛍️ Late check-out: ขอที่ Front Desk</span>
+            <span>·</span>
+            <span><a href="#hotel-mitsui-garden">ดูรายละเอียดโรงแรม</a></span>
+          </div>
         </div>
       </div>
     </div>
     <div class="stay-bar">
       <div>
         <div class="stay-label">Tonight's Stay</div>
-        <div class="stay-name">Mitsui Garden Hotel Nagoya Premier (final night) <span class="jp">名古屋</span></div>
-        <div class="stay-price">~¥10,000–15,000/ห้อง</div>
+        <div class="stay-name">★ Mitsui Garden Hotel Nagoya Premier (คืนสุดท้าย) <span class="jp">三井ガーデンホテル</span></div>
+        <div class="stay-price">~¥10,000–13,000/คืน · top-floor sky lobby + onsen</div>
       </div>
     </div>
   </div>
