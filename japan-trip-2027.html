@@ -972,6 +972,209 @@
     letter-spacing: 0.4em;
   }
 
+  /* ============ MOBILE OPTIMIZATION (≤ 600px) ============ */
+  @media (max-width: 600px) {
+    /* HERO */
+    .hero { padding: 60px 6vw 50px; min-height: auto; }
+    .hero h1 { font-size: 36px; line-height: 1.1; margin-bottom: 16px; }
+    .hero .subtitle { font-size: 14px; margin-bottom: 28px; line-height: 1.7; }
+    .hero .eyebrow { font-size: 10px; gap: 8px; margin-bottom: 20px; letter-spacing: 0.2em; }
+    .hero .eyebrow::before, .hero .eyebrow::after { width: 24px; }
+    .kanji-mark { font-size: 70px; top: -10px; right: -8px; letter-spacing: -4px; }
+    .hero-meta { gap: 14px; grid-template-columns: 1fr 1fr; margin-top: 16px; }
+    .meta-card { padding: 6px 0 6px 12px; border-left-width: 2px; }
+    .meta-card .label { font-size: 10px; letter-spacing: 0.2em; margin-bottom: 4px; }
+    .meta-card .value { font-size: 15px; }
+    .meta-card .value-jp { font-size: 12px; }
+
+    /* DAY NAV */
+    .day-nav { padding: 10px 12px; }
+    .day-nav-label { font-size: 10px; margin-right: 10px; letter-spacing: 0.2em; }
+    .day-nav-item { padding: 6px 10px; min-width: 60px; }
+    .day-nav-item .num { font-size: 14px; }
+    .day-nav-item .lbl { font-size: 9px; }
+
+    /* SECTIONS */
+    .section { padding: 50px 5vw 60px; }
+    .section-header { margin-bottom: 36px; }
+    .section-header .num { font-size: 12px; letter-spacing: 0.25em; }
+    .section-header h2 { font-size: 28px; line-height: 1.2; }
+    .section-header .subtitle { font-size: 14px; }
+
+    /* OVERVIEW */
+    .quick-stats { grid-template-columns: 1fr; gap: 12px; }
+    .stat-card { padding: 20px 18px; }
+    .stat-card .number { font-size: 28px; }
+    .stat-card .desc { font-size: 12px; }
+    .route-map { padding: 24px 22px; }
+    .route-map h3 { font-size: 19px; margin-bottom: 22px; }
+    .route-stop .city { font-size: 15px; }
+
+    /* DAY CARD */
+    .day-card { margin-bottom: 24px; }
+
+    /* DAY HERO */
+    .day-hero { height: 200px; }
+    .day-hero-info { bottom: 16px; left: 18px; right: 18px; }
+    .day-hero-info .pre { font-size: 10px; letter-spacing: 0.2em; margin-bottom: 4px; }
+    .day-hero-info .day-num { font-size: 44px; margin-right: 12px; }
+    .day-hero-info .day-meta { display: inline-block; max-width: calc(100% - 70px); }
+    .day-hero-info h3 { font-size: 18px; line-height: 1.2; margin-bottom: 2px; }
+    .day-hero-info .day-date { font-size: 11px; }
+    .day-hero::after { font-size: 60px; }
+
+    /* DAY SUMMARY ROW */
+    .day-summary-row { padding: 16px 18px; gap: 12px; }
+    .day-summary-row .summary { font-size: 13px; line-height: 1.6; }
+    .day-summary-row .jp-label { font-size: 12px; margin-bottom: 4px; }
+    .day-tags { gap: 5px; }
+    .tag { padding: 3px 9px; font-size: 10px; letter-spacing: 0.05em; }
+
+    /* SCHEDULE — stack vertically */
+    .schedule { grid-template-columns: 1fr; }
+    .schedule-time {
+      border-right: none;
+      border-bottom: 1px solid var(--line-soft);
+      padding: 10px 18px;
+      text-align: left;
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      background: var(--paper-soft);
+      font-size: 13px;
+      font-weight: 700;
+    }
+    .schedule-time .duration {
+      display: inline;
+      margin-top: 0;
+      font-size: 11px;
+    }
+    .schedule-time .duration::before { content: "·  "; opacity: 0.5; }
+    .schedule-content { padding: 16px 18px 18px; }
+    .schedule-content h4 {
+      font-size: 15px;
+      line-height: 1.35;
+      margin-bottom: 8px;
+    }
+    .schedule-content h4 .jp {
+      display: block;
+      margin-left: 0;
+      margin-top: 3px;
+      font-size: 12px;
+    }
+    .schedule-content p { font-size: 13px; line-height: 1.65; }
+    .schedule-content .meta {
+      gap: 8px 14px;
+      font-size: 11px;
+      margin-top: 8px;
+    }
+    .schedule-content ul { font-size: 13px !important; line-height: 1.7 !important; }
+    .schedule-content .note-box {
+      font-size: 12px;
+      padding: 10px 12px;
+    }
+
+    /* HOTEL INFO CARD — stack rows vertically */
+    .hotel-info-card { padding: 12px 14px; font-size: 12.5px; }
+    .hotel-info-card .row {
+      flex-direction: column;
+      gap: 2px;
+      padding: 8px 0;
+      border-bottom: 1px dashed var(--line);
+    }
+    .hotel-info-card .row:last-child { border-bottom: none; }
+    .hotel-info-card .row .label {
+      min-width: 0;
+      font-size: 10.5px;
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-weight: 700;
+    }
+
+    /* HOTEL BACK PILL — flex wrap */
+    .hotel-back-pill {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 10px;
+      padding: 10px 14px;
+      border-radius: 8px;
+      font-size: 11px;
+      line-height: 1.5;
+    }
+
+    /* STAY BAR */
+    .stay-bar {
+      padding: 16px 18px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+    }
+    .stay-bar .stay-label { font-size: 10px; }
+    .stay-bar .stay-name { font-size: 14px; line-height: 1.35; }
+    .stay-bar .stay-name .jp {
+      display: block;
+      margin-left: 0;
+      margin-top: 4px;
+      font-size: 12px;
+    }
+    .stay-bar .stay-price { font-size: 12px; line-height: 1.5; }
+    .stay-bar .helpers { width: 100%; gap: 5px; }
+
+    /* HELPERS */
+    .helpers { gap: 6px; }
+    .helper-btn {
+      padding: 6px 10px;
+      font-size: 11px;
+      gap: 4px;
+    }
+    .helper-btn .ico { font-size: 11px; }
+
+    /* INLINE IMG / GALLERY */
+    .inline-img { height: 160px; }
+    .inline-img .caption { font-size: 11px; padding: 20px 12px 8px; }
+
+    /* TIPS */
+    .tips-grid { gap: 14px; }
+    .tip-card { padding: 22px 20px; }
+    .tip-card .num { font-size: 11px; margin-bottom: 8px; }
+    .tip-card h4 { font-size: 16px; margin-bottom: 8px; }
+    .tip-card p { font-size: 13px; line-height: 1.65; }
+
+    /* BUDGET */
+    .budget-section { padding: 50px 5vw 60px; }
+    .budget-grid { gap: 24px; }
+    .budget-table { padding: 24px 20px; }
+    .budget-table h3 { font-size: 16px; }
+    .budget-row { font-size: 13px; padding: 8px 0; }
+    .budget-row.total { font-size: 14px; }
+
+    /* PACKING */
+    .packing-grid { gap: 14px; }
+    .pack-cat { padding: 22px 20px; }
+    .pack-cat h4 { font-size: 15px; }
+    .pack-cat ul { font-size: 13px; }
+
+    /* MISC */
+    .divider { font-size: 13px; margin: 30px 0; letter-spacing: 0.3em; }
+  }
+
+  /* ============ EXTRA SMALL (≤ 380px) ============ */
+  @media (max-width: 380px) {
+    .hero h1 { font-size: 30px; }
+    .hero-meta { grid-template-columns: 1fr; }
+    .day-hero-info .day-num { font-size: 36px; margin-right: 10px; }
+    .day-hero-info h3 { font-size: 16px; }
+    .day-hero-info .day-meta { max-width: calc(100% - 60px); }
+    .schedule-content { padding: 14px 16px; }
+    .schedule-time { padding: 9px 16px; font-size: 12px; }
+    .hotel-info-card { padding: 10px 12px; font-size: 12px; }
+    .stay-bar { padding: 14px 16px; }
+    .section { padding: 40px 4vw 50px; }
+    .section-header h2 { font-size: 24px; }
+    .helper-btn { padding: 5px 9px; font-size: 10.5px; }
+  }
+
   /* PRINT */
   @media print {
     .day-nav { display: none; }
