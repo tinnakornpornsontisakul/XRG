@@ -37,7 +37,6 @@
   }
   .jp { font-family: 'Noto Serif JP', 'Shippori Mincho', serif; }
   .serif { font-family: 'Noto Serif JP', serif; letter-spacing: 0.02em; }
-
   /* ============ STICKY DAY NAV ============ */
   .day-nav {
     position: sticky;
@@ -111,7 +110,6 @@
     font-size: 14px;
     margin-bottom: 2px;
   }
-
   /* HERO */
   .hero {
     position: relative;
@@ -219,7 +217,6 @@
     color: rgba(255,255,255,0.65);
     margin-top: 4px;
   }
-
   /* SECTION */
   .section {
     padding: 80px 8vw 100px;
@@ -251,7 +248,6 @@
     max-width: 600px;
     margin: 0 auto;
   }
-
   /* OVERVIEW */
   .overview-grid {
     display: grid;
@@ -260,7 +256,6 @@
     align-items: stretch;
   }
   @media (max-width: 900px) { .overview-grid { grid-template-columns: 1fr; } }
-
   .route-map {
     background: var(--snow);
     border: 1px solid var(--line-soft);
@@ -322,7 +317,6 @@
     font-size: 13px;
     margin-top: 2px;
   }
-
   .quick-stats {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -354,7 +348,6 @@
     margin-bottom: 6px;
   }
   .stat-card .desc { font-size: 13px; color: var(--ink-soft); line-height: 1.4; }
-
   /* ============ DAY CARDS ============ */
   .day-card {
     background: var(--snow);
@@ -369,7 +362,6 @@
     border: 1px solid var(--gold-soft);
     box-shadow: 0 4px 30px rgba(200,155,60,0.08);
   }
-
   /* DAY HERO IMAGE */
   .day-hero {
     position: relative;
@@ -457,7 +449,6 @@
     opacity: 0.85;
     letter-spacing: 0.05em;
   }
-
   .day-summary-row {
     display: grid;
     grid-template-columns: 1fr auto;
@@ -500,7 +491,6 @@
   .tag.food { background: rgba(200,155,60,0.15); color: #876318; }
   .tag.onsen { background: rgba(232,154,168,0.18); color: var(--sakura-deep); }
   .tag.shopping { background: rgba(58,77,128,0.12); color: var(--indigo-soft); }
-
   .day-body { padding: 0; }
   .schedule {
     display: grid;
@@ -560,7 +550,6 @@
     font-weight: 700;
   }
   .schedule-content .meta span:first-child::before { content: ""; margin: 0; }
-
   /* INLINE THUMBNAIL */
   .inline-img {
     margin: 14px 0;
@@ -592,7 +581,6 @@
     font-family: 'Noto Serif JP', serif;
     letter-spacing: 0.05em;
   }
-
   /* ============ HOTEL INFO CARD ============ */
   .hotel-info-card {
     background: var(--paper-soft);
@@ -639,7 +627,6 @@
     margin-top: 8px;
   }
   .hotel-back-pill a { color: var(--indigo); text-decoration: none; font-weight: 500; }
-
   /* ============ IMAGE GALLERY (multi-photo) ============ */
   .img-gallery {
     margin: 14px 0;
@@ -681,7 +668,6 @@
     .img-gallery { grid-template-columns: repeat(2, 1fr); gap: 6px; }
     .img-gallery .gallery-item { height: 120px; }
   }
-
   /* ============ HELPER BUTTONS ============ */
   .helpers {
     display: flex;
@@ -721,7 +707,6 @@
   .helper-btn.train { color: var(--indigo); border-color: #c5d0e8; background: #eef2fa; }
   .helper-btn.train:hover { background: var(--indigo); color: white; border-color: var(--indigo); }
   .helper-btn .ico { font-size: 12px; }
-
   .stay-bar {
     background: linear-gradient(90deg, var(--indigo-deep), var(--indigo));
     color: var(--snow);
@@ -751,7 +736,6 @@
     border-color: rgba(255,255,255,0.25);
     color: white;
   }
-
   /* TIPS */
   .tips-grid {
     display: grid;
@@ -783,7 +767,6 @@
     color: var(--ink-soft);
     line-height: 1.7;
   }
-
   /* BUDGET */
   .budget-section {
     background: linear-gradient(135deg, var(--indigo-deep), var(--indigo));
@@ -833,7 +816,6 @@
     font-weight: 700;
   }
   .budget-row.total .value { color: var(--snow); font-size: 22px; }
-
   /* PACKING */
   .packing-grid {
     display: grid;
@@ -883,7 +865,6 @@
     font-weight: 700;
     flex-shrink: 0;
   }
-
   /* FOOD GALLERY */
   .food-grid {
     display: grid;
@@ -921,7 +902,6 @@
   }
   .food-card .desc { font-size: 12px; color: var(--ink-soft); line-height: 1.5; margin-bottom: 12px; }
   .food-card .helpers { justify-content: center; }
-
   /* DECORATIVE */
   .divider {
     text-align: center;
@@ -931,7 +911,6 @@
     font-size: 18px;
     letter-spacing: 1em;
   }
-
   /* NOTE BOX */
   .note-box {
     background: linear-gradient(90deg, rgba(232,154,168,0.08), transparent);
@@ -948,7 +927,6 @@
     font-family: 'Shippori Mincho', serif;
     margin-right: 6px;
   }
-
   /* FOOTER */
   footer {
     background: var(--ink);
@@ -971,7 +949,6 @@
     margin: 16px 0;
     letter-spacing: 0.4em;
   }
-
   /* ============ MOBILE OPTIMIZATION (≤ 600px) ============ */
   @media (max-width: 600px) {
     /* HERO */
@@ -986,21 +963,18 @@
     .meta-card .label { font-size: 10px; letter-spacing: 0.2em; margin-bottom: 4px; }
     .meta-card .value { font-size: 15px; }
     .meta-card .value-jp { font-size: 12px; }
-
     /* DAY NAV */
     .day-nav { padding: 10px 12px; }
     .day-nav-label { font-size: 10px; margin-right: 10px; letter-spacing: 0.2em; }
     .day-nav-item { padding: 6px 10px; min-width: 60px; }
     .day-nav-item .num { font-size: 14px; }
     .day-nav-item .lbl { font-size: 9px; }
-
     /* SECTIONS */
     .section { padding: 50px 5vw 60px; }
     .section-header { margin-bottom: 36px; }
     .section-header .num { font-size: 12px; letter-spacing: 0.25em; }
     .section-header h2 { font-size: 28px; line-height: 1.2; }
     .section-header .subtitle { font-size: 14px; }
-
     /* OVERVIEW */
     .quick-stats { grid-template-columns: 1fr; gap: 12px; }
     .stat-card { padding: 20px 18px; }
@@ -1009,10 +983,8 @@
     .route-map { padding: 24px 22px; }
     .route-map h3 { font-size: 19px; margin-bottom: 22px; }
     .route-stop .city { font-size: 15px; }
-
     /* DAY CARD */
     .day-card { margin-bottom: 24px; }
-
     /* DAY HERO */
     .day-hero { height: 200px; }
     .day-hero-info { bottom: 16px; left: 18px; right: 18px; }
@@ -1022,14 +994,12 @@
     .day-hero-info h3 { font-size: 18px; line-height: 1.2; margin-bottom: 2px; }
     .day-hero-info .day-date { font-size: 11px; }
     .day-hero::after { font-size: 60px; }
-
     /* DAY SUMMARY ROW */
     .day-summary-row { padding: 16px 18px; gap: 12px; }
     .day-summary-row .summary { font-size: 13px; line-height: 1.6; }
     .day-summary-row .jp-label { font-size: 12px; margin-bottom: 4px; }
     .day-tags { gap: 5px; }
     .tag { padding: 3px 9px; font-size: 10px; letter-spacing: 0.05em; }
-
     /* SCHEDULE — stack vertically */
     .schedule { grid-template-columns: 1fr; }
     .schedule-time {
@@ -1073,7 +1043,6 @@
       font-size: 12px;
       padding: 10px 12px;
     }
-
     /* HOTEL INFO CARD — stack rows vertically */
     .hotel-info-card { padding: 12px 14px; font-size: 12.5px; }
     .hotel-info-card .row {
@@ -1091,7 +1060,6 @@
       letter-spacing: 0.08em;
       font-weight: 700;
     }
-
     /* HOTEL BACK PILL — flex wrap */
     .hotel-back-pill {
       display: flex;
@@ -1102,7 +1070,6 @@
       font-size: 11px;
       line-height: 1.5;
     }
-
     /* STAY BAR */
     .stay-bar {
       padding: 16px 18px;
@@ -1120,7 +1087,6 @@
     }
     .stay-bar .stay-price { font-size: 12px; line-height: 1.5; }
     .stay-bar .helpers { width: 100%; gap: 5px; }
-
     /* HELPERS */
     .helpers { gap: 6px; }
     .helper-btn {
@@ -1129,18 +1095,15 @@
       gap: 4px;
     }
     .helper-btn .ico { font-size: 11px; }
-
     /* INLINE IMG / GALLERY */
     .inline-img { height: 160px; }
     .inline-img .caption { font-size: 11px; padding: 20px 12px 8px; }
-
     /* TIPS */
     .tips-grid { gap: 14px; }
     .tip-card { padding: 22px 20px; }
     .tip-card .num { font-size: 11px; margin-bottom: 8px; }
     .tip-card h4 { font-size: 16px; margin-bottom: 8px; }
     .tip-card p { font-size: 13px; line-height: 1.65; }
-
     /* BUDGET */
     .budget-section { padding: 50px 5vw 60px; }
     .budget-grid { gap: 24px; }
@@ -1148,17 +1111,14 @@
     .budget-table h3 { font-size: 16px; }
     .budget-row { font-size: 13px; padding: 8px 0; }
     .budget-row.total { font-size: 14px; }
-
     /* PACKING */
     .packing-grid { gap: 14px; }
     .pack-cat { padding: 22px 20px; }
     .pack-cat h4 { font-size: 15px; }
     .pack-cat ul { font-size: 13px; }
-
     /* MISC */
     .divider { font-size: 13px; margin: 30px 0; letter-spacing: 0.3em; }
   }
-
   /* ============ EXTRA SMALL (≤ 380px) ============ */
   @media (max-width: 380px) {
     .hero h1 { font-size: 30px; }
@@ -1174,7 +1134,6 @@
     .section-header h2 { font-size: 24px; }
     .helper-btn { padding: 5px 9px; font-size: 10.5px; }
   }
-
   /* PRINT */
   @media print {
     .day-nav { display: none; }
@@ -1184,11 +1143,10 @@
 </style>
 </head>
 <body>
-
 <!-- ============ STICKY DAY NAVIGATION ============ -->
 <nav class="day-nav">
   <div class="day-nav-inner">
-    <span class="day-nav-label">— 旅程 · Jump to —</span>
+    <span class="day-nav-label">— Jump to —</span>
     <a href="#day1" class="day-nav-item"><span class="ic">✈️</span><span class="num">1</span><span class="lbl">29 Jan</span></a>
     <a href="#day2" class="day-nav-item"><span class="ic">⛷️</span><span class="num">2</span><span class="lbl">30 Jan</span></a>
     <a href="#day3" class="day-nav-item"><span class="ic">🏘️</span><span class="num">3</span><span class="lbl">31 Jan</span></a>
@@ -1202,15 +1160,12 @@
     <a href="#tips" class="day-nav-item"><span class="ic">💡</span><span class="num">i</span><span class="lbl">Tips</span></a>
   </div>
 </nav>
-
 <!-- HERO -->
 <section class="hero">
-  <div class="kanji-mark">日本</div>
   <div class="hero-content">
     <div class="eyebrow">January 29 — February 6, 2027</div>
     <h1>
       Winter in Chubu
-      <span class="accent">中部の冬</span>
     </h1>
     <p class="subtitle">
       9 วัน 8 คืน ผ่านหิมะของเทือกเขาแอลป์ญี่ปุ่น<br>
@@ -1220,41 +1175,36 @@
       <div class="meta-card">
         <div class="label">Route</div>
         <div class="value">NGO ⇄ Chubu</div>
-        <div class="value-jp">名古屋 — 高山</div>
       </div>
       <div class="meta-card">
         <div class="label">Duration</div>
         <div class="value">9 days · 8 nights</div>
-        <div class="value-jp">九日間</div>
       </div>
       <div class="meta-card">
         <div class="label">Season</div>
         <div class="value">Mid-Winter</div>
-        <div class="value-jp">真冬 · -5°C ถึง 5°C</div>
+        <div class="value-jp">-5°C ถึง 5°C</div>
       </div>
       <div class="meta-card">
         <div class="label">Style</div>
         <div class="value">Balanced</div>
-        <div class="value-jp">食 · 雪 · 温泉 · 城</div>
       </div>
     </div>
   </div>
 </section>
-
 <!-- OVERVIEW -->
 <section class="section">
   <div class="section-header">
-    <span class="num">— 概要 · OVERVIEW —</span>
+    <span class="num">— OVERVIEW —</span>
     <h2>เส้นทางและภาพรวม</h2>
     <p class="subtitle">เน้นบาลานซ์ ทั้งเมือง ภูเขา หิมะ ออนเซน อาหาร และวัฒนธรรม โดยปักหลักที่ Takayama 4 คืน + Okuhida 1 คืน + Nagoya 3 คืน</p>
   </div>
-
   <div class="overview-grid">
     <div class="route-map">
       <h3>เส้นทางการเดินทาง</h3>
       <div class="route-line">
         <div class="route-stop">
-          <div class="city">Chubu Centrair (NGO) <span class="city-jp">中部国際空港</span></div>
+          <div class="city">Chubu Centrair (NGO)</div>
           <div class="nights">Day 1 · ลงเครื่อง บ่าย-เย็น</div>
           <div class="helpers" style="margin-top:8px;">
             <a class="helper-btn map" href="https://www.google.com/maps/search/?api=1&query=Chubu+Centrair+International+Airport" target="_blank" rel="noopener"><span class="ico">📍</span>Maps</a>
@@ -1262,7 +1212,7 @@
           </div>
         </div>
         <div class="route-stop">
-          <div class="city">Takayama <span class="city-jp">高山</span></div>
+          <div class="city">Takayama</div>
           <div class="nights">Day 1–4 · 4 คืนแรก (ใช้เป็น base)</div>
           <div class="helpers" style="margin-top:8px;">
             <a class="helper-btn map" href="https://www.google.com/maps/search/?api=1&query=Takayama+Station+Gifu" target="_blank" rel="noopener"><span class="ico">📍</span>Maps</a>
@@ -1270,7 +1220,7 @@
           </div>
         </div>
         <div class="route-stop">
-          <div class="city">Okuhida Onsen <span class="city-jp">奥飛騨温泉郷</span></div>
+          <div class="city">Okuhida Onsen</div>
           <div class="nights">Day 5 · 1 คืน (ryokan + kaiseki)</div>
           <div class="helpers" style="margin-top:8px;">
             <a class="helper-btn map" href="https://www.google.com/maps/search/?api=1&query=Okuhida+Onsen+Hirayu" target="_blank" rel="noopener"><span class="ico">📍</span>Maps</a>
@@ -1278,7 +1228,7 @@
           </div>
         </div>
         <div class="route-stop">
-          <div class="city">Nagoya <span class="city-jp">名古屋</span></div>
+          <div class="city">Nagoya</div>
           <div class="nights">Day 6–8 · 3 คืน (city + ปราสาท + shopping)</div>
           <div class="helpers" style="margin-top:8px;">
             <a class="helper-btn map" href="https://www.google.com/maps/search/?api=1&query=Nagoya+Station" target="_blank" rel="noopener"><span class="ico">📍</span>Maps</a>
@@ -1287,7 +1237,6 @@
         </div>
       </div>
     </div>
-
     <div class="quick-stats">
       <div class="stat-card">
         <div class="number">5</div>
@@ -1308,17 +1257,14 @@
     </div>
   </div>
 </section>
-
-<div class="divider">— 旅 —</div>
-
+<div class="divider">—  —</div>
 <!-- DAYS START -->
 <section class="section" style="padding-top: 0;">
   <div class="section-header">
-    <span class="num">— 旅程 · ITINERARY —</span>
+    <span class="num">— ITINERARY —</span>
     <h2>แผนรายวัน · 9 Days</h2>
     <p class="subtitle">ทุกวันถูกออกแบบให้ไม่เหนื่อยเกิน เริ่มสาย-เลิกเร็ว มีเวลาแช่ออนเซน เผื่อเวลาช้อปและเดินเล่น · กดปุ่ม Maps / Website / Booking ในแต่ละกิจกรรมเพื่อเข้าถึงข้อมูลแบบรวดเร็ว</p>
   </div>
-
   <!-- ============ DAY 1 ============ -->
   <div class="day-card" id="day1">
     <div class="day-hero" data-fallback="✈️" style="background-image: linear-gradient(135deg, #0c1936aa, #1c2e5acc), url('https://commons.wikimedia.org/wiki/Special:FilePath/Chubu_Centrair_International_Airport_-_North_Wing_-_01.JPG?width=1400');">
@@ -1337,7 +1283,7 @@
     </div>
     <div class="day-summary-row">
       <div>
-        <div class="jp-label">到着 · บินเข้าญี่ปุ่นและเข้าสู่เมืองเก่า</div>
+        <div class="jp-label">บินเข้าญี่ปุ่นและเข้าสู่เมืองเก่า</div>
         <div class="summary">เริ่มทริปด้วยการบินตรง BKK → NGO ต่อ Limited Express สู่ Takayama เพื่อเช็คอินและพักผ่อน เก็บแรงไว้สำหรับวันสกี เย็นวันแรกชิมเนื้อฮิดะมื้อแรก</div>
       </div>
       <div class="day-tags">
@@ -1346,11 +1292,10 @@
       </div>
     </div>
     <div class="day-body">
-
       <div class="schedule">
         <div class="schedule-time">~ AM<span class="duration">~ 6 ชม.</span></div>
         <div class="schedule-content">
-          <h4>Flight: BKK → Chubu Centrair (NGO) <span class="jp">セントレア空港</span></h4>
+          <h4>Flight: BKK → Chubu Centrair (NGO)</h4>
           <p>เที่ยวบินตรงเช้า เช่น Thai Airways TG644 (BKK 00:05 → NGO 07:55), JAL JL738, ANA NH848 — เลือกเที่ยวบินที่ถึง Centrair ตอนเช้าเพื่อให้มีเวลาเดินทางต่อแบบไม่รีบ</p>
           <div class="meta">
             <span>Immigration ~45–60 นาที</span>
@@ -1365,11 +1310,10 @@
           </div>
         </div>
       </div>
-
       <div class="schedule">
         <div class="schedule-time">09:30<span class="duration">28 นาที</span></div>
         <div class="schedule-content">
-          <h4>Meitetsu μ-SKY → Nagoya Station <span class="jp">名鉄空港特急</span></h4>
+          <h4>Meitetsu μ-SKY → Nagoya Station</h4>
           <p>Express train จากสนามบินเข้าตัวเมืองนาโกย่า รถไฟตรงไม่ต้องเปลี่ยนสาย ออกทุก 30 นาที ที่นั่งสำรองทั้งขบวน</p>
           <div class="meta"><span>¥1,250</span><span>ที่นั่งสำรองทั้งขบวน</span></div>
           <div class="helpers">
@@ -1378,11 +1322,10 @@
           </div>
         </div>
       </div>
-
       <div class="schedule">
         <div class="schedule-time">10:00<span class="duration">~45 นาที</span></div>
         <div class="schedule-content">
-          <h4>ช้อปปิ้งกันหนาวด่วนที่ JR Gate Tower <span class="jp">ユニクロ・ジーユー</span></h4>
+          <h4>ช้อปปิ้งกันหนาวด่วนที่ JR Gate Tower</h4>
           <p>ก่อนขึ้นรถไฟ Hida มีเวลา ~50 นาทีที่ Nagoya Station แวะตึก <strong>JR Gate Tower Mall</strong> (เชื่อมตรงสถานี) ขึ้นชั้น 7F สำหรับ <strong>GU</strong> และชั้น 11F สำหรับ <strong>UNIQLO ที่ใหญ่ที่สุดในนาโกย่า</strong> — ซื้อ HEATTECH Ultra Warm, Down Jacket, Fleece, ถุงเท้าหนา, ถุงมือ, beanie ก่อนเข้าเขตหนาวจริง · ใช้ <strong>Tax-Free</strong> โชว์พาสปอร์ตเมื่อซื้อเกิน ¥5,000</p>
           <div class="note-box">
             <span class="note-label">Tip:</span> ถ้าไม่อยากเสี่ยงเวลา ซื้อ HEATTECH ที่ <strong>UNIQLO Centrair</strong> (Terminal 1, 4F Sky Town, เปิด 8:00) ตั้งแต่ลงเครื่อง — ของน้อยกว่าแต่ครบ basic · หรือซื้อที่ UNIQLO/GU ที่กรุงเทพล่วงหน้า รุ่นเดียวกันราคาใกล้เคียงกัน
@@ -1397,11 +1340,10 @@
           </div>
         </div>
       </div>
-
       <div class="schedule">
         <div class="schedule-time">10:48<span class="duration">2 ชม. 25 นาที</span></div>
         <div class="schedule-content">
-          <h4>JR Limited Express Hida 5 → Takayama <span class="jp">特急ひだ</span></h4>
+          <h4>JR Limited Express Hida 5 → Takayama</h4>
           <p>นั่งรถไฟ HC85 series ใหม่ของ JR Central วิวโค้งแม่น้ำ Hida สวย ออกจาก Nagoya 10:48 ถึง Takayama 13:13 (เช็คเวลาอีกครั้งใกล้วันเดินทาง)</p>
           <div class="note-box">
             <span class="note-label">Tip:</span> จองที่นั่งล่วงหน้า 1 เดือนผ่าน JR Central web booking — ขาออกจากนาโกย่านั่งฝั่งซ้าย (A) ขากลับนั่งฝั่งขวา (D) วิวแม่น้ำสวย
@@ -1415,17 +1357,16 @@
           </div>
         </div>
       </div>
-
       <div class="schedule" id="hotel-tokyu-stay">
         <div class="schedule-time">15:00<span class="duration">~1 ชม.</span></div>
         <div class="schedule-content">
-          <h4>เช็คอิน: TOKYU STAY Hida-Takayama Musubi no Yu <span class="jp">東急ステイ飛騨高山 結の湯</span></h4>
+          <h4>เช็คอิน: TOKYU STAY Hida-Takayama Musubi no Yu</h4>
           <p>โรงแรม 4★ ใหม่สวย เปิดปี 2020 · เดินจากสถานี Takayama 7 นาที · รีวิว 4.7/5 — มีรีวิวว่า "best accommodation of our entire Japan trip" · วางของแล้วลองเดินเล่นรอบสถานีก่อน</p>
           <div class="hotel-info-card">
             <div class="row"><span class="label">📍 ที่อยู่</span><span class="value">4-301 Hanasatomachi, Takayama-shi, Gifu 506-0026</span></div>
             <div class="row"><span class="label">📞 โทร</span><span class="value"><a href="tel:+81577361109">+81 577-36-1109</a> (0577-36-1109 ในญี่ปุ่น)</span></div>
             <div class="row"><span class="label">⏰ Check-in/out</span><span class="value">15:00 / 11:00</span></div>
-            <div class="row"><span class="label">♨️ Onsen</span><span class="value">Indoor onsen น้ำแร่ธรรมชาติ "Musubi no Yu" 結の湯 — เปิด 14:00–02:00 + 05:00–10:00 (ฟรี)</span></div>
+            <div class="row"><span class="label">♨️ Onsen</span><span class="value">Indoor onsen น้ำแร่ธรรมชาติ "Musubi no Yu" — เปิด 14:00–02:00 + 05:00–10:00 (ฟรี)</span></div>
             <div class="row"><span class="label">🍳 Breakfast</span><span class="value">Buffet เช้า Hida specialties (รวมในหลายแพ็กเกจ)</span></div>
             <div class="row"><span class="label">🚆 Access</span><span class="value">เดิน 7 นาทีจาก JR Takayama Station (ทางออกตะวันออก)</span></div>
             <div class="row"><span class="label">📶 WiFi</span><span class="value">ฟรีทั่วโรงแรม · มี desk + USB ports ทุกห้อง</span></div>
@@ -1433,7 +1374,7 @@
           </div>
           <div class="inline-img">
             <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Takayama_Old_Town_(Sanmachi_Suji)_(35819349621).jpg?width=900" alt="Takayama atmosphere near hotel" loading="lazy" onerror="this.parentElement.style.background='linear-gradient(135deg, #2a2a3e, #5a4a3e)';this.style.display='none'">
-            <div class="caption">飛騨高山 · Atmosphere ของ Takayama รอบโรงแรม</div>
+            <div class="caption">Atmosphere ของ Takayama รอบโรงแรม</div>
           </div>
           <div class="helpers">
             <a class="helper-btn map" href="https://www.google.com/maps/search/?api=1&query=Tokyu+Stay+Hida+Takayama+Musubi+no+Yu" target="_blank" rel="noopener"><span class="ico">📍</span>Maps</a>
@@ -1445,20 +1386,19 @@
           </div>
         </div>
       </div>
-
       <div class="schedule">
         <div class="schedule-time">15:30<span class="duration">2–3 ชม.</span></div>
         <div class="schedule-content">
-          <h4>เดินเล่น Sanmachi Suji ครั้งแรก <span class="jp">三町筋</span></h4>
+          <h4>เดินเล่น Sanmachi Suji ครั้งแรก</h4>
           <p>เดินเล่นเบาๆ ในย่านเมืองเก่า ชิมเนื้อฮิดะปิ้งบนข้าวเหนียวที่ร้าน Tenaga Ashinaga (~¥600), ขนม mitarashi dango, และดูร้านสาเก หลายร้านปิดประมาณ 17:00</p>
           <div class="img-gallery">
             <div class="gallery-item">
               <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Takayama_Old_Town_(Sanmachi_Suji)_(35819349621).jpg?width=600" alt="Sanmachi Suji Takayama" loading="lazy" onerror="this.parentElement.style.display='none'">
-              <div class="caption">三町筋 · ถนน Ichi-no-machi</div>
+              <div class="caption">ถนน Ichi-no-machi</div>
             </div>
             <div class="gallery-item">
               <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Hida-Takayama_Miyagawa_Morning_Market_(15668520238).jpg?width=600" alt="Miyagawa morning market view" loading="lazy" onerror="this.parentElement.style.display='none'">
-              <div class="caption">宮川朝市 · ตลาดเช้า Miyagawa</div>
+              <div class="caption">ตลาดเช้า Miyagawa</div>
             </div>
           </div>
           <div class="meta"><span>เดินไม่เกิน 1 km</span><span>ฟรี</span></div>
@@ -1468,15 +1408,14 @@
           </div>
         </div>
       </div>
-
       <div class="schedule">
         <div class="schedule-time">19:00<span class="duration">2 ชม.</span></div>
         <div class="schedule-content">
-          <h4>มื้อค่ำ: Hida Beef แรกของทริป <span class="jp">飛騨牛</span></h4>
+          <h4>มื้อค่ำ: Hida Beef แรกของทริป</h4>
           <p>แนะนำ <strong>Kitchen Hida</strong> (เปิด 17:30, จำเป็นต้องจอง) หรือ <strong>Maruaki</strong> (Hida Beef ระดับ A5 เกรดซื้อกลับได้) ลองสเต็กฮิดะ A5 หรือชาบูเนื้อ</p>
           <div class="inline-img">
             <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Sushi,_Hida_Beef.jpg?width=900" alt="Hida beef sushi" loading="lazy" onerror="this.parentElement.style.background='linear-gradient(135deg, #8a4a3a, #4a2a1a)';this.style.display='none'">
-            <div class="caption">飛騨牛にぎり · Hida beef sushi (Tabelog Gold ที่ Kotteushi)</div>
+            <div class="caption">Hida beef sushi (Tabelog Gold ที่ Kotteushi)</div>
           </div>
           <div class="meta"><span>~¥6,000–10,000/คน</span><span>จองล่วงหน้า</span></div>
           <div class="helpers">
@@ -1491,7 +1430,7 @@
     <div class="stay-bar">
       <div>
         <div class="stay-label">Tonight's Stay · 4 คืนติด (Day 1–4)</div>
-        <div class="stay-name">★ TOKYU STAY Hida-Takayama Musubi no Yu <span class="jp">東急ステイ飛騨高山 結の湯</span></div>
+        <div class="stay-name">★ TOKYU STAY Hida-Takayama Musubi no Yu</div>
         <div class="stay-price">~¥9,000–11,000/คืน · 4★ · เดิน 7 นาทีจากสถานี · indoor onsen น้ำแร่ + buffet เช้า · รีวิว 4.7/5</div>
       </div>
       <div class="helpers">
@@ -1503,7 +1442,6 @@
       </div>
     </div>
   </div>
-
   <!-- ============ DAY 2 ============ -->
   <div class="day-card featured" id="day2">
     <div class="day-hero" data-fallback="⛷️" style="background-image: linear-gradient(135deg, #0c1936aa, #4a6a52cc), url('https://commons.wikimedia.org/wiki/Special:FilePath/Norikura_Skyline_and_Hida_Mountains.jpg?width=1400');">
@@ -1515,14 +1453,14 @@
           <span class="day-num">02</span>
           <span class="day-meta">
             <h3>Ski Day · Hounokidaira</h3>
-            <div class="day-date">30 Jan 2027 · 朴の木平スキー場</div>
+            <div class="day-date">30 Jan 2027</div>
           </span>
         </div>
       </div>
     </div>
     <div class="day-summary-row">
       <div>
-        <div class="jp-label">朴の木平スキー場 · เล่นสกีกลางเทือกเขา</div>
+        <div class="jp-label">เล่นสกีกลางเทือกเขา</div>
         <div class="summary">วันสกีเต็มวันที่ Hounokidaira Ski Resort เลนตื้น-กลาง เหมาะกับมือใหม่และครอบครัว ใช้ shuttle bus จาก Takayama เช้าออก-เย็นกลับ</div>
       </div>
       <div class="day-tags">
@@ -1531,11 +1469,10 @@
       </div>
     </div>
     <div class="day-body">
-
       <div class="schedule">
         <div class="schedule-time">07:30<span class="duration">~1 ชม.</span></div>
         <div class="schedule-content">
-          <h4>Hounokidaira Ski Bus จาก Takayama Nohi Bus Center <span class="jp">朴の木平スキーバス</span></h4>
+          <h4>Hounokidaira Ski Bus จาก Takayama Nohi Bus Center</h4>
           <p>Nohi Bus มีรถบัสตรงไป Hounokidaira (ตอนหน้าหนาวเปิดเดินทุกวัน) ใช้เวลาประมาณ 60 นาที จองล่วงหน้าผ่านเว็บ Nohi Bus หรือซื้อตั๋วที่เคาน์เตอร์ (เปิด 06:30)</p>
           <div class="meta"><span>~¥1,800 ไป-กลับ</span><span>นั่งหลับยาวได้</span></div>
           <div class="helpers">
@@ -1545,15 +1482,14 @@
           </div>
         </div>
       </div>
-
       <div class="schedule">
         <div class="schedule-time">09:00<span class="duration">~6 ชม.</span></div>
         <div class="schedule-content">
-          <h4>เช่าอุปกรณ์ + Lift Pass + Lessons (ถ้าต้องการ) <span class="jp">レンタル</span></h4>
+          <h4>เช่าอุปกรณ์ + Lift Pass + Lessons (ถ้าต้องการ)</h4>
           <p>Resort มีบริการเช่าครบ ทั้งสกี/สโนว์บอร์ด เสื้อผ้ากันหนาว แว่น ถุงมือ — เลน 13 เลน (ระดับเริ่มต้น 50%, กลาง 30%, ขั้นสูง 20%) Beginner area กว้าง ร้านอาหารบนสกีพร้อม ร้านกาแฟอุ่น</p>
           <div class="inline-img">
             <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Norikura_Skyline_and_Hida_Mountains.jpg?width=900" alt="Skiing in Japan winter" loading="lazy" onerror="this.parentElement.style.background='linear-gradient(135deg, #4a6a82, #2a4a62)';this.style.display='none'">
-            <div class="caption">朴の木平 · Hounokidaira Ski Resort, Norikura</div>
+            <div class="caption">Hounokidaira Ski Resort, Norikura</div>
           </div>
           <div class="meta">
             <span>Lift pass 1 วัน: ¥4,500</span>
@@ -1572,27 +1508,24 @@
           </div>
         </div>
       </div>
-
       <div class="schedule">
         <div class="schedule-time">12:00<span class="duration">1 ชม.</span></div>
         <div class="schedule-content">
-          <h4>มื้อกลางวันที่ลานสกี <span class="jp">ゲレ食</span></h4>
+          <h4>มื้อกลางวันที่ลานสกี</h4>
           <p>ร้าน Center House มีโซบะ-อุด้งร้อนๆ, curry rice, ramen และ Hida beef bowl ราคาประมาณ ¥1,200–1,800</p>
         </div>
       </div>
-
       <div class="schedule">
         <div class="schedule-time">16:30<span class="duration">~1 ชม.</span></div>
         <div class="schedule-content">
-          <h4>Bus กลับ Takayama <span class="jp">高山へ戻る</span></h4>
+          <h4>Bus กลับ Takayama</h4>
           <p>รถออกจาก Hounokidaira ประมาณ 16:30–17:00 ถึง Takayama Nohi Bus Center ราว 17:30–18:00</p>
         </div>
       </div>
-
       <div class="schedule">
         <div class="schedule-time">18:00<span class="duration">~30 นาที</span></div>
         <div class="schedule-content">
-          <h4>กลับที่พัก: TOKYU STAY Hida-Takayama <span class="jp">ホテルへ戻る</span></h4>
+          <h4>กลับที่พัก: TOKYU STAY Hida-Takayama</h4>
           <p>เดินจาก Takayama Nohi Bus Center 7 นาที · เก็บอุปกรณ์สกี + แช่ออนเซนล้างเมื่อยก่อนออกไปทานข้าว</p>
           <div class="hotel-back-pill">
             <span>📞 <a href="tel:+81577361109">+81 577-36-1109</a></span>
@@ -1603,11 +1536,10 @@
           </div>
         </div>
       </div>
-
       <div class="schedule">
         <div class="schedule-time">19:00<span class="duration">2 ชม.</span></div>
         <div class="schedule-content">
-          <h4>Onsen + อาหารค่ำเรียบง่าย <span class="jp">温泉</span></h4>
+          <h4>Onsen + อาหารค่ำเรียบง่าย</h4>
           <p>กลับโรงแรมเข้าออนเซนคลายเมื่อยจากสกี — มื้อค่ำลองร้าน Yamatake Shoten (izakaya สไตล์ Hida) หรือ Center 4 Hamburgers (Hida beef burger ขึ้นชื่อ)</p>
           <div class="note-box">
             <span class="note-label">Note:</span> หลังเล่นสกีเต็มวัน กล้ามเนื้อจะเมื่อยมาก ถ้าโรงแรมไม่มีออนเซน แนะนำ Hida Takayama Ouhi no Yu (เดินจากสถานี 5 นาที, ¥1,000)
@@ -1623,12 +1555,11 @@
     <div class="stay-bar">
       <div>
         <div class="stay-label">Tonight's Stay</div>
-        <div class="stay-name">★ TOKYU STAY Hida-Takayama Musubi no Yu (คืนต่อ) <span class="jp">東急ステイ飛騨高山</span></div>
+        <div class="stay-name">★ TOKYU STAY Hida-Takayama Musubi no Yu (คืนต่อ)</div>
         <div class="stay-price">~¥9,000–11,000/คืน · indoor onsen + buffet เช้า</div>
       </div>
     </div>
   </div>
-
   <!-- ============ DAY 3 ============ -->
   <div class="day-card" id="day3">
     <div class="day-hero" data-fallback="🏘️" style="background-image: linear-gradient(135deg, #0c1936aa, #4a4a3ecc), url('https://commons.wikimedia.org/wiki/Special:FilePath/Shirakawa-hachiman-jinja_winter.JPG?width=1400');">
@@ -1640,14 +1571,14 @@
           <span class="day-num">03</span>
           <span class="day-meta">
             <h3>Shirakawa-go Day Trip</h3>
-            <div class="day-date">31 Jan 2027 · 白川郷</div>
+            <div class="day-date">31 Jan 2027</div>
           </span>
         </div>
       </div>
     </div>
     <div class="day-summary-row">
       <div>
-        <div class="jp-label">白川郷 · หมู่บ้านมรดกโลกหลังคาทรง gassho</div>
+        <div class="jp-label">หมู่บ้านมรดกโลกหลังคาทรง gassho</div>
         <div class="summary">บัสตรงจาก Takayama ไป Shirakawa-go 50 นาที เดินเล่นในหมู่บ้านมรดกโลก ขึ้นจุดชมวิว Shiroyama เข้าชมบ้านเก่า ลุ้นวันที่มี winter illumination</div>
       </div>
       <div class="day-tags">
@@ -1656,15 +1587,14 @@
       </div>
     </div>
     <div class="day-body">
-
       <div class="schedule">
         <div class="schedule-time">07:00<span class="duration">1 ชม.</span></div>
         <div class="schedule-content">
-          <h4>Asaichi: Miyagawa Morning Market <span class="jp">宮川朝市</span></h4>
+          <h4>Asaichi: Miyagawa Morning Market</h4>
           <p>เช้าตรู่เริ่มที่ตลาดเช้าริมแม่น้ำ Miyagawa (เปิด 7:00–12:00) แวะซื้อ sarubobo, มันบดอบ, ผลไม้ดอง, ขนม manju ก่อนนั่งบัสไป Shirakawa-go</p>
           <div class="inline-img">
             <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Hida-Takayama_Miyagawa_Morning_Market_(15668520238).jpg?width=900" alt="Miyagawa Morning Market" loading="lazy" onerror="this.parentElement.style.background='linear-gradient(135deg, #5a4a3a, #2a1a1a)';this.style.display='none'">
-            <div class="caption">宮川朝市 · ตลาดเช้าริมแม่น้ำ Miyagawa</div>
+            <div class="caption">ตลาดเช้าริมแม่น้ำ Miyagawa</div>
           </div>
           <div class="helpers">
             <a class="helper-btn map" href="https://www.google.com/maps/search/?api=1&query=Miyagawa+Morning+Market" target="_blank" rel="noopener"><span class="ico">📍</span>Maps</a>
@@ -1672,11 +1602,10 @@
           </div>
         </div>
       </div>
-
       <div class="schedule">
         <div class="schedule-time">08:50<span class="duration">50 นาที</span></div>
         <div class="schedule-content">
-          <h4>Nohi Bus: Takayama → Shirakawa-go <span class="jp">白川郷行きバス</span></h4>
+          <h4>Nohi Bus: Takayama → Shirakawa-go</h4>
           <p>ออก 08:50 (เช็คตารางจริงอีกครั้ง) จอง online ล่วงหน้า — แนะนำเลือก reserved seat โดยเฉพาะ Sun เพราะคนเยอะ ใช้เวลา 50 นาที</p>
           <div class="meta"><span>One-way ¥2,600 / Round trip ¥4,600</span></div>
           <div class="helpers">
@@ -1686,24 +1615,23 @@
           </div>
         </div>
       </div>
-
       <div class="schedule">
         <div class="schedule-time">10:00<span class="duration">5 ชม.</span></div>
         <div class="schedule-content">
-          <h4>เดินสำรวจ Shirakawa-go <span class="jp">白川郷散策</span></h4>
+          <h4>เดินสำรวจ Shirakawa-go</h4>
           <p>หมู่บ้าน UNESCO มีบ้านโบราณกว่า 100 หลัง ลำดับการเดิน:</p>
           <div class="img-gallery">
             <div class="gallery-item">
               <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Shirakawa-go_(2014-06-03).JPG?width=600" alt="Shirakawa-go from Shiroyama" loading="lazy" onerror="this.parentElement.style.display='none'">
-              <div class="caption">白川郷 荻町 · จาก Shiroyama Viewpoint</div>
+              <div class="caption">จาก Shiroyama Viewpoint</div>
             </div>
             <div class="gallery-item">
               <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Wada_House-02.jpg?width=600" alt="Wada House Shirakawa-go" loading="lazy" onerror="this.parentElement.style.display='none'">
-              <div class="caption">和田家 · Wada House (cultural property)</div>
+              <div class="caption">Wada House (cultural property)</div>
             </div>
             <div class="gallery-item">
               <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Shirakawa-hachiman-jinja_winter.JPG?width=600" alt="Shirakawa-go winter snow" loading="lazy" onerror="this.parentElement.style.display='none'">
-              <div class="caption">冬の白川郷 · ฤดูหนาวพร้อมหิมะ</div>
+              <div class="caption">ฤดูหนาวพร้อมหิมะ</div>
             </div>
           </div>
           <ul style="margin-top: 10px; padding-left: 20px; color: var(--ink-soft); font-size: 14px; line-height: 1.9;">
@@ -1726,11 +1654,10 @@
           </div>
         </div>
       </div>
-
       <div class="schedule">
         <div class="schedule-time">15:30<span class="duration">50 นาที</span></div>
         <div class="schedule-content">
-          <h4>Bus กลับ Takayama <span class="jp">高山に戻る</span></h4>
+          <h4>Bus กลับ Takayama</h4>
           <p>รถบัส 15:30 หรือ 16:30 — เลือกตามจังหวะ ถ้าจะอยู่ดู winter illumination ต้องค้างคืน Shirakawa-go (จองล่วงหน้า 6+ เดือน)</p>
           <div class="note-box">
             <span class="note-label">Illumination 2027:</span> Shirakawa-go จัด Winter Illumination เฉพาะวันอาทิตย์/จันทร์บางวันใน ม.ค.-ก.พ. (17:30–19:30) เช็คตาราง 2026/2027 ที่ shirakawa-go.gr.jp ก่อนเดินทาง — ปกติ 31 ม.ค. มีโอกาสเป็นวันจัด ถ้าใช่ ต้องจองโต๊ะร้าน + bus + ที่พักเป็นแพ็คเกจ
@@ -1741,11 +1668,10 @@
           </div>
         </div>
       </div>
-
       <div class="schedule">
         <div class="schedule-time">17:00<span class="duration">~30 นาที</span></div>
         <div class="schedule-content">
-          <h4>กลับที่พัก: TOKYU STAY Hida-Takayama <span class="jp">ホテルへ戻る</span></h4>
+          <h4>กลับที่พัก: TOKYU STAY Hida-Takayama</h4>
           <p>ลงรถบัสที่ Takayama Nohi Bus Center · เดินกลับโรงแรม 7 นาที · พักผ่อนสั้นๆ ก่อนออกไปทานข้าว</p>
           <div class="hotel-back-pill">
             <span>📞 <a href="tel:+81577361109">+81 577-36-1109</a></span>
@@ -1756,11 +1682,10 @@
           </div>
         </div>
       </div>
-
       <div class="schedule">
         <div class="schedule-time">18:30<span class="duration">2 ชม.</span></div>
         <div class="schedule-content">
-          <h4>Dinner: Sushi เนื้อ Hida ที่ Sakaguchiya <span class="jp">飛騨牛にぎり</span></h4>
+          <h4>Dinner: Sushi เนื้อ Hida ที่ Sakaguchiya</h4>
           <p>หรือลอง izakaya Sakana ในย่าน Old Town สั่ง yakitori, sashimi และสาเกท้องถิ่น Funasaka หรือ Hirase</p>
           <div class="helpers">
             <a class="helper-btn map" href="https://www.google.com/maps/search/?api=1&query=Sakaguchiya+Takayama" target="_blank" rel="noopener"><span class="ico">📍</span>Sakaguchiya</a>
@@ -1772,12 +1697,11 @@
     <div class="stay-bar">
       <div>
         <div class="stay-label">Tonight's Stay</div>
-        <div class="stay-name">★ TOKYU STAY Hida-Takayama Musubi no Yu (คืนต่อ) <span class="jp">東急ステイ飛騨高山</span></div>
+        <div class="stay-name">★ TOKYU STAY Hida-Takayama Musubi no Yu (คืนต่อ)</div>
         <div class="stay-price">~¥9,000–11,000/คืน · indoor onsen + buffet เช้า</div>
       </div>
     </div>
   </div>
-
   <!-- ============ DAY 4 ============ -->
   <div class="day-card" id="day4">
     <div class="day-hero" data-fallback="🏯" style="background-image: linear-gradient(135deg, #0c1936aa, #c1272daa), url('https://commons.wikimedia.org/wiki/Special:FilePath/Entrance_of_Takayama_Jinya_House_in_a_snowy_day.JPG?width=1400');">
@@ -1789,14 +1713,14 @@
           <span class="day-num">04</span>
           <span class="day-meta">
             <h3>Sanmachi & Cultural Day</h3>
-            <div class="day-date">1 Feb 2027 · 古い町並</div>
+            <div class="day-date">1 Feb 2027</div>
           </span>
         </div>
       </div>
     </div>
     <div class="day-summary-row">
       <div>
-        <div class="jp-label">古い町並 · เที่ยว Takayama แบบช้าๆ</div>
+        <div class="jp-label">เที่ยว Takayama แบบช้าๆ</div>
         <div class="summary">วันที่ไม่ต้องนั่งรถนาน เดินเล่น Sanmachi Suji ในแบบเต็มอิ่ม แวะ Takayama Jinya, ตลาดเช้า, sake brewery tasting และ Hida Folk Village ในช่วงบ่าย</div>
       </div>
       <div class="day-tags">
@@ -1806,11 +1730,10 @@
       </div>
     </div>
     <div class="day-body">
-
       <div class="schedule">
         <div class="schedule-time">08:00<span class="duration">1.5 ชม.</span></div>
         <div class="schedule-content">
-          <h4>Jinya-mae Asaichi <span class="jp">陣屋前朝市</span></h4>
+          <h4>Jinya-mae Asaichi</h4>
           <p>ตลาดเช้าหน้า Takayama Jinya เปิด 6:00–12:00 มีพืชผักท้องถิ่น ผลไม้ดอง ขนม ของฝาก เดินเล่น 30–45 นาที</p>
           <div class="helpers">
             <a class="helper-btn map" href="https://www.google.com/maps/search/?api=1&query=Jinya-mae+Asaichi" target="_blank" rel="noopener"><span class="ico">📍</span>Maps</a>
@@ -1818,24 +1741,23 @@
           </div>
         </div>
       </div>
-
       <div class="schedule">
         <div class="schedule-time">09:00<span class="duration">1.5 ชม.</span></div>
         <div class="schedule-content">
-          <h4>Takayama Jinya <span class="jp">高山陣屋</span></h4>
+          <h4>Takayama Jinya</h4>
           <p>อาคารที่ทำการเก่ายุค Edo เพียงแห่งเดียวที่ยังเหลือในญี่ปุ่น มีห้องบัญชี, ห้องสอบสวน, ครัวเก่า, ยุ้งข้าว เปิด 8:45–17:00</p>
           <div class="img-gallery">
             <div class="gallery-item">
               <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Entrance_of_Takayama_Jinya_House_in_a_snowy_day.JPG?width=600" alt="Takayama Jinya entrance snow" loading="lazy" onerror="this.parentElement.style.display='none'">
-              <div class="caption">高山陣屋 表玄関 · ทางเข้าฤดูหนาว</div>
+              <div class="caption">ทางเข้าฤดูหนาว</div>
             </div>
             <div class="gallery-item">
               <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Takayama_Jinya_inside_view_201706.jpg?width=600" alt="Takayama Jinya interior" loading="lazy" onerror="this.parentElement.style.display='none'">
-              <div class="caption">陣屋内 · Tatami room ด้านใน</div>
+              <div class="caption">Tatami room ด้านใน</div>
             </div>
             <div class="gallery-item">
               <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Takayama_Jinya_Garden_2017.JPG?width=600" alt="Takayama Jinya garden" loading="lazy" onerror="this.parentElement.style.display='none'">
-              <div class="caption">陣屋庭園 · สวนญี่ปุ่นด้านหลัง</div>
+              <div class="caption">สวนญี่ปุ่นด้านหลัง</div>
             </div>
           </div>
           <div class="meta"><span>¥440</span><span>มี audio guide ภาษาอังกฤษ</span></div>
@@ -1845,11 +1767,10 @@
           </div>
         </div>
       </div>
-
       <div class="schedule">
         <div class="schedule-time">10:30<span class="duration">2.5 ชม.</span></div>
         <div class="schedule-content">
-          <h4>Sanmachi Suji เต็มเส้น + Sake Tasting <span class="jp">三町筋・酒蔵</span></h4>
+          <h4>Sanmachi Suji เต็มเส้น + Sake Tasting</h4>
           <p>ย่านเมืองเก่า 3 ถนน (Ichi-no-machi, Ni-no-machi, San-no-machi) — บ้านไม้สีเข้มอายุกว่า 300 ปี มีโรงสาเก 6 แห่ง:</p>
           <ul style="margin-top: 10px; padding-left: 20px; color: var(--ink-soft); font-size: 14px; line-height: 1.9;">
             <li><strong>Funasaka Sake Brewery</strong> — มี tasting set 5 แก้ว ¥500</li>
@@ -1866,15 +1787,14 @@
           </div>
         </div>
       </div>
-
       <div class="schedule">
         <div class="schedule-time">13:00<span class="duration">1.5 ชม.</span></div>
         <div class="schedule-content">
-          <h4>Lunch: Hida Beef Sushi ที่ Kotteushi <span class="jp">こって牛</span></h4>
+          <h4>Lunch: Hida Beef Sushi ที่ Kotteushi</h4>
           <p>ร้าน sushi เนื้อ Hida เสิร์ฟบนกระเบื้องโทเซน — set 3 คำ ¥1,500 (otoro/sirloin/akami) เป็นจุดถ่ายรูปแลนด์มาร์คของ Sanmachi</p>
           <div class="inline-img">
             <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Sushi,_Hida_Beef.jpg?width=900" alt="Hida beef sushi" loading="lazy" onerror="this.parentElement.style.background='linear-gradient(135deg, #8a4a3a, #4a2a1a)';this.style.display='none'">
-            <div class="caption">飛騨牛にぎり · Hida Beef Sushi at Kotteushi</div>
+            <div class="caption">Hida Beef Sushi at Kotteushi</div>
           </div>
           <div class="helpers">
             <a class="helper-btn map" href="https://www.google.com/maps/search/?api=1&query=Kotteushi+Takayama" target="_blank" rel="noopener"><span class="ico">📍</span>Maps</a>
@@ -1883,15 +1803,14 @@
           </div>
         </div>
       </div>
-
       <div class="schedule">
         <div class="schedule-time">14:30<span class="duration">2.5 ชม.</span></div>
         <div class="schedule-content">
-          <h4>Hida Folk Village <span class="jp">飛騨の里</span></h4>
+          <h4>Hida Folk Village</h4>
           <p>หมู่บ้านเปิด-โล่งจัดแสดงบ้านโบราณ 30+ หลังจากภูมิภาค Hida ในช่วงหิมะมีสภาพเหมือน Shirakawa-go เลย แต่คนน้อยกว่ามาก เปิด 8:30–17:00 รถ Sarubobo Bus จากสถานี 10 นาที (¥210)</p>
           <div class="inline-img">
             <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Hida_Folk_Village.jpg?width=900" alt="Hida Folk Village" loading="lazy" onerror="this.parentElement.style.background='linear-gradient(135deg, #5a4a3a, #2a1a1a)';this.style.display='none'">
-            <div class="caption">飛騨の里 · Hida Folk Village (open-air museum)</div>
+            <div class="caption">Hida Folk Village (open-air museum)</div>
           </div>
           <div class="meta"><span>¥700</span><span>เดินรอบ ~2 ชม.</span></div>
           <div class="note-box">
@@ -1904,11 +1823,10 @@
           </div>
         </div>
       </div>
-
       <div class="schedule">
         <div class="schedule-time">17:30<span class="duration">~30 นาที</span></div>
         <div class="schedule-content">
-          <h4>กลับที่พัก: TOKYU STAY Hida-Takayama <span class="jp">ホテルへ戻る</span></h4>
+          <h4>กลับที่พัก: TOKYU STAY Hida-Takayama</h4>
           <p>นั่ง Sarubobo Bus จาก Hida Folk Village กลับสถานี (~10 นาที, ¥210) แล้วเดินกลับโรงแรม · พักก่อนออกไปทานข้าวเย็น</p>
           <div class="hotel-back-pill">
             <span>📞 <a href="tel:+81577361109">+81 577-36-1109</a></span>
@@ -1919,11 +1837,10 @@
           </div>
         </div>
       </div>
-
       <div class="schedule">
         <div class="schedule-time">19:00<span class="duration">2 ชม.</span></div>
         <div class="schedule-content">
-          <h4>Dinner: Hoba Miso + Hida Beef Course <span class="jp">朴葉味噌</span></h4>
+          <h4>Dinner: Hoba Miso + Hida Beef Course</h4>
           <p>มื้อค่ำลองอาหารเฉพาะถิ่น — Hoba Miso (เนื้อย่างกับมิโซะบนใบโฮบะ) ที่ร้าน Suzuya หรือ Kakusho — ร้านเก่า 175 ปี · เนื้อ Hida ระดับ A5 พร้อม Hoba miso</p>
           <div class="helpers">
             <a class="helper-btn map" href="https://www.google.com/maps/search/?api=1&query=Suzuya+Takayama" target="_blank" rel="noopener"><span class="ico">📍</span>Suzuya</a>
@@ -1936,12 +1853,11 @@
     <div class="stay-bar">
       <div>
         <div class="stay-label">Tonight's Stay</div>
-        <div class="stay-name">★ TOKYU STAY Hida-Takayama Musubi no Yu (คืนต่อ) <span class="jp">東急ステイ飛騨高山</span></div>
+        <div class="stay-name">★ TOKYU STAY Hida-Takayama Musubi no Yu (คืนต่อ)</div>
         <div class="stay-price">~¥9,000–11,000/คืน · indoor onsen + buffet เช้า</div>
       </div>
     </div>
   </div>
-
   <!-- ============ DAY 5 ============ -->
   <div class="day-card featured" id="day5">
     <div class="day-hero" data-fallback="🚡" style="background-image: linear-gradient(135deg, #0c1936aa, #2c3e6acc), url('https://commons.wikimedia.org/wiki/Special:FilePath/071123_Hotaka_Mountains_view_from_Nishihotaka-guchi_Station_Shinhotaka_Ropeway_Japan01s.jpg?width=1400');">
@@ -1953,14 +1869,14 @@
           <span class="day-num">05</span>
           <span class="day-meta">
             <h3>Shinhotaka & Okuhida Onsen</h3>
-            <div class="day-date">2 Feb 2027 · 新穂高ロープウェイ・奥飛騨温泉郷</div>
+            <div class="day-date">2 Feb 2027</div>
           </span>
         </div>
       </div>
     </div>
     <div class="day-summary-row">
       <div>
-        <div class="jp-label">奥飛騨温泉郷・新穂高ロープウェイ · ขึ้นเทือกเขาแอลป์เหนือ</div>
+        <div class="jp-label">ขึ้นเทือกเขาแอลป์เหนือ</div>
         <div class="summary">ไฮไลท์ของทริป! ขึ้นกระเช้าชั้น 2 ของญี่ปุ่นไปยอดเขา 2,156 ม. ดู Hotaka, Yari, Kasa peaks ปกคลุมหิมะ ลงมาแช่ออนเซนใน Okuhida แล้วพัก ryokan + kaiseki</div>
       </div>
       <div class="day-tags">
@@ -1970,11 +1886,10 @@
       </div>
     </div>
     <div class="day-body">
-
       <div class="schedule">
         <div class="schedule-time">08:50<span class="duration">~1 ชม. 45 นาที</span></div>
         <div class="schedule-content">
-          <h4>Bus: Takayama → Hirayu Onsen → Shinhotaka <span class="jp">奥飛騨へ</span></h4>
+          <h4>Bus: Takayama → Hirayu Onsen → Shinhotaka</h4>
           <p>นั่ง Nohi Bus ผ่าน Hirayu Onsen (เปลี่ยนรถที่ Hirayu Bus Terminal) ไปจุดท่ากระเช้า Shinhotaka ส่งกระเป๋าฝากที่ ryokan ในตอนนั้นด้วย หรือฝากที่ Hirayu Bus Terminal coin lockers</p>
           <div class="meta"><span>One-way ¥2,200</span><span>Bus ออกทุก 1–1.5 ชม.</span></div>
           <div class="helpers">
@@ -1984,15 +1899,14 @@
           </div>
         </div>
       </div>
-
       <div class="schedule">
         <div class="schedule-time">11:00<span class="duration">3 ชม.</span></div>
         <div class="schedule-content">
-          <h4>Shinhotaka Ropeway <span class="jp">新穂高ロープウェイ</span></h4>
+          <h4>Shinhotaka Ropeway</h4>
           <p>กระเช้าชั้น 2 แห่งเดียวในญี่ปุ่น แบ่ง 2 ช่วง:</p>
           <div class="inline-img">
             <img src="https://commons.wikimedia.org/wiki/Special:FilePath/071123_Hotaka_Mountains_view_from_Nishihotaka-guchi_Station_Shinhotaka_Ropeway_Japan01s.jpg?width=900" alt="Shinhotaka Ropeway summit view" loading="lazy" onerror="this.parentElement.style.background='linear-gradient(135deg, #5a7a9a, #2a4a6a)';this.style.display='none'">
-            <div class="caption">新穂高ロープウェイ · Northern Alps view from Nishihotakaguchi (2,156m)</div>
+            <div class="caption">Northern Alps view from Nishihotakaguchi (2,156m)</div>
           </div>
           <ul style="margin-top: 10px; padding-left: 20px; color: var(--ink-soft); font-size: 14px; line-height: 1.9;">
             <li><strong>Stage 1:</strong> Shinhotaka Onsen (1,117m) → Nabedaira Kogen (1,308m) · 4 นาที</li>
@@ -2016,19 +1930,17 @@
           </div>
         </div>
       </div>
-
       <div class="schedule">
         <div class="schedule-time">14:00<span class="duration">1 ชม.</span></div>
         <div class="schedule-content">
-          <h4>Lunch: Soba ร้อนๆ ที่ Shinhotaka <span class="jp">温まるそば</span></h4>
+          <h4>Lunch: Soba ร้อนๆ ที่ Shinhotaka</h4>
           <p>ร้านที่สถานีล่าง: Alps no Sato หรือ Café Mountain View · ลอง Hida beef soba, mountain vegetable tempura, sake hot</p>
         </div>
       </div>
-
       <div class="schedule" id="hotel-yarimikan">
         <div class="schedule-time">15:30<span class="duration">~1 ชม.</span></div>
         <div class="schedule-content">
-          <h4>เช็คอิน Ryokan: Yarimikan <span class="jp">槍見舘</span></h4>
+          <h4>เช็คอิน Ryokan: Yarimikan</h4>
           <p>Ryokan ระดับ destination · บ้านไม้แบบฟาร์มเฮาส์ Hida ริมแม่น้ำ Gamada · มี <strong>7 rotenburo</strong> ทั้งแบบรวม + แยก + private · เช็คอินจาก 14:00 เก็บกระเป๋าแล้วใส่ yukata เริ่มแช่ออนเซน + เตรียมตัวสำหรับ kaiseki</p>
           <div class="hotel-info-card">
             <div class="row"><span class="label">📍 ที่อยู่</span><span class="value">587 Okuhida Onsengo Kansaka, Takayama-shi, Gifu 506-1421</span></div>
@@ -2045,11 +1957,11 @@
           <div class="img-gallery">
             <div class="gallery-item">
               <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Tsurunoyu_onsen_rotenburo.JPG?width=600" alt="Rotenburo bath" loading="lazy" onerror="this.parentElement.style.display='none'">
-              <div class="caption">露天風呂 · Rotenburo style ริมแม่น้ำ</div>
+              <div class="caption">Rotenburo style ริมแม่น้ำ</div>
             </div>
             <div class="gallery-item">
               <img src="https://commons.wikimedia.org/wiki/Special:FilePath/071123_Hotaka_Mountains_view_from_Nishihotaka-guchi_Station_Shinhotaka_Ropeway_Japan01s.jpg?width=600" alt="Hotaka mountains" loading="lazy" onerror="this.parentElement.style.display='none'">
-              <div class="caption">奥飛騨 · ภูเขา Hotaka รอบโรงแรม</div>
+              <div class="caption">ภูเขา Hotaka รอบโรงแรม</div>
             </div>
           </div>
           <div class="helpers">
@@ -2063,15 +1975,14 @@
           </div>
         </div>
       </div>
-
       <div class="schedule">
         <div class="schedule-time">16:00<span class="duration">3 ชม.</span></div>
         <div class="schedule-content">
-          <h4>Onsen Hopping ใน Okuhida <span class="jp">湯巡り</span></h4>
+          <h4>Onsen Hopping ใน Okuhida</h4>
           <p>Okuhida Onsen Village ประกอบด้วย 5 พื้นที่ (Hirayu, Fukuji, Shin-Hirayu, Tochio, Shinhotaka) มีออนเซนกลางแจ้ง (rotenburo) มากกว่า 100 บ่อ — ดื่มด่ำกับ rotenburo ท่ามกลางหิมะ</p>
           <div class="inline-img">
             <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Tsurunoyu_onsen_rotenburo.JPG?width=900" alt="Okuhida Onsen rotenburo" loading="lazy" onerror="this.parentElement.style.background='linear-gradient(135deg, #4a3a4e, #2a1a2e)';this.style.display='none'">
-            <div class="caption">奥飛騨温泉 · Rotenburo bath at Okuhida</div>
+            <div class="caption">Rotenburo bath at Okuhida</div>
           </div>
           <div class="note-box">
             <span class="note-label">Yumeguri Pass:</span> ¥2,500 ใช้แช่ได้ 3 ครั้งใน 6 เดือน ใช้กับ ryokan ที่เข้าร่วม 25 แห่ง · แต่ส่วนใหญ่ ryokan ที่จะพักจะมีออนเซนของตัวเอง อาจไม่จำเป็น
@@ -2082,11 +1993,10 @@
           </div>
         </div>
       </div>
-
       <div class="schedule">
         <div class="schedule-time">19:00<span class="duration">2 ชม.</span></div>
         <div class="schedule-content">
-          <h4>Kaiseki Dinner ที่ Ryokan <span class="jp">懐石料理</span></h4>
+          <h4>Kaiseki Dinner ที่ Ryokan</h4>
           <p>มื้อ kaiseki แบบ traditional 8–12 จาน รวม Hida beef shabu, river fish, mountain vegetables, sashimi, soba — แต่งโต๊ะ tatami สวยงาม</p>
         </div>
       </div>
@@ -2094,7 +2004,7 @@
     <div class="stay-bar">
       <div>
         <div class="stay-label">Tonight's Stay (Splurge · 1 คืน)</div>
-        <div class="stay-name">★ Yarimikan <span class="jp">槍見舘</span></div>
+        <div class="stay-name">★ Yarimikan</div>
         <div class="stay-price">~¥30,000–40,000/คน (2 คน 1 ห้อง) · รวม kaiseki + เช้า · 7 rotenburo ริมแม่น้ำ Gamada · รีวิว Tripadvisor 4.5/5</div>
       </div>
       <div class="helpers">
@@ -2107,14 +2017,13 @@
       </div>
     </div>
   </div>
-
   <!-- ============ DAY 6 ============ -->
   <div class="day-card" id="day6">
     <div class="day-hero" data-fallback="🚆" style="background-image: linear-gradient(135deg, #0c1936aa, #1c2e5acc), url('https://commons.wikimedia.org/wiki/Special:FilePath/JR_C_HC85_D3_Nagoya_20220703.jpg?width=1400');">
       <img src="https://commons.wikimedia.org/wiki/Special:FilePath/JR_C_HC85_D3_Nagoya_20220703.jpg?width=1400" alt="JR HC85 Hida limited express" loading="lazy" onerror="this.style.display='none'">
       <div class="day-hero-overlay"></div>
       <div class="day-hero-info">
-        <div class="pre">DAY SIX · WEDNESDAY · 節分</div>
+        <div class="pre">DAY SIX · WEDNESDAY</div>
         <div>
           <span class="day-num">06</span>
           <span class="day-meta">
@@ -2126,7 +2035,7 @@
     </div>
     <div class="day-summary-row">
       <div>
-        <div class="jp-label">名古屋へ移動 · เดินทางลงเมืองใหญ่</div>
+        <div class="jp-label">เดินทางลงเมืองใหญ่</div>
         <div class="summary">มื้อเช้า kaiseki แล้วแช่ rotenburo เช้า ก่อนนั่งบัสกลับ Takayama แวะ shopping ของฝาก ลง JR Hida Express ไปนาโกย่า เย็นไปดูพิธี Setsubun ที่ศาลเจ้า</div>
       </div>
       <div class="day-tags">
@@ -2135,19 +2044,17 @@
       </div>
     </div>
     <div class="day-body">
-
       <div class="schedule">
         <div class="schedule-time">07:30<span class="duration">2 ชม.</span></div>
         <div class="schedule-content">
-          <h4>Morning Onsen + Breakfast <span class="jp">朝風呂</span></h4>
+          <h4>Morning Onsen + Breakfast</h4>
           <p>อาบน้ำเช้าใน rotenburo ก่อนเช็คเอาท์ มื้อเช้าญี่ปุ่นแบบสมบูรณ์ที่ ryokan</p>
         </div>
       </div>
-
       <div class="schedule">
         <div class="schedule-time">10:30<span class="duration">~1.5 ชม.</span></div>
         <div class="schedule-content">
-          <h4>Bus: Hirayu / Shinhotaka → Takayama <span class="jp">高山へ</span></h4>
+          <h4>Bus: Hirayu / Shinhotaka → Takayama</h4>
           <p>Nohi Bus ตรงกลับ Takayama ราคา ~¥1,860 ทันรับ Limited Express Hida ขบวนบ่าย</p>
           <div class="helpers">
             <a class="helper-btn book" href="https://japanbusonline.com/en" target="_blank" rel="noopener"><span class="ico">🎫</span>Bus Booking</a>
@@ -2155,19 +2062,17 @@
           </div>
         </div>
       </div>
-
       <div class="schedule">
         <div class="schedule-time">12:30<span class="duration">2 ชม.</span></div>
         <div class="schedule-content">
-          <h4>Quick Lunch + Last Souvenir Shopping <span class="jp">最後の買い物</span></h4>
+          <h4>Quick Lunch + Last Souvenir Shopping</h4>
           <p>ก่อนขึ้นรถไฟ — ลองตลาดเช้า Miyagawa ครั้งสุดท้าย หรือ Hida Beef bowl ที่ร้านในสถานี · ของฝากที่แนะนำ: sarubobo, hoba miso paste, Hida sake, mitarashi dango</p>
         </div>
       </div>
-
       <div class="schedule">
         <div class="schedule-time">14:32<span class="duration">2 ชม. 25 นาที</span></div>
         <div class="schedule-content">
-          <h4>JR Hida 14 → Nagoya <span class="jp">特急ひだ・名古屋</span></h4>
+          <h4>JR Hida 14 → Nagoya</h4>
           <p>นั่งฝั่งขวา (D) ดูวิวแม่น้ำ Hida ที่กลายเป็นหุบเขาลึก ถึง Nagoya ประมาณ 16:57</p>
           <div class="meta"><span>¥6,140</span><span>จองล่วงหน้า</span></div>
           <div class="helpers">
@@ -2176,18 +2081,17 @@
           </div>
         </div>
       </div>
-
       <div class="schedule" id="hotel-mitsui-garden">
         <div class="schedule-time">17:30<span class="duration">~1 ชม.</span></div>
         <div class="schedule-content">
-          <h4>เช็คอิน: Mitsui Garden Hotel Nagoya Premier <span class="jp">三井ガーデンホテル名古屋プレミア</span></h4>
+          <h4>เช็คอิน: Mitsui Garden Hotel Nagoya Premier</h4>
           <p>โรงแรม 4★ ใจกลาง Meieki · เดิน 5 นาทีจาก JR Nagoya Station · มี <strong>top-floor sky lobby + onsen</strong> วิวเมืองนาโกย่ารอบทิศ · รีวิว 4.4/5 — เด่นเรื่องห้องเงียบสงบและพนักงาน · เช็คอินเสร็จออกไปทาน Tebasaki ต่อ</p>
           <div class="hotel-info-card">
             <div class="row"><span class="label">📍 ที่อยู่</span><span class="value">4-11-27 Meieki, Nakamura-ku, Nagoya-shi, Aichi 450-0002</span></div>
             <div class="row"><span class="label">📞 โทร</span><span class="value"><a href="tel:+81525871131">+81 52-587-1131</a> (052-587-1131 ในญี่ปุ่น)</span></div>
             <div class="row"><span class="label">📧 Email</span><span class="value"><a href="mailto:nagoya_front@gardenhotels.co.jp">nagoya_front@gardenhotels.co.jp</a></span></div>
             <div class="row"><span class="label">⏰ Check-in/out</span><span class="value">15:00 / 11:00</span></div>
-            <div class="row"><span class="label">♨️ Onsen</span><span class="value">Top-floor sky onsen "Hinoki Bath" 檜風呂 · เปิด 15:00–02:00 + 05:00–10:00 (ฟรี)</span></div>
+            <div class="row"><span class="label">♨️ Onsen</span><span class="value">Top-floor sky onsen "Hinoki Bath" · เปิด 15:00–02:00 + 05:00–10:00 (ฟรี)</span></div>
             <div class="row"><span class="label">🍳 Breakfast</span><span class="value">Buffet เช้า ¥2,800/คน · มีอาหารไทย-ญี่ปุ่น-ตะวันตก</span></div>
             <div class="row"><span class="label">🚆 Access</span><span class="value">เดิน 5 นาทีจาก JR Nagoya Sta. ทางออก Sakuradori · 8 นาทีจาก Meitetsu/Kintetsu Nagoya</span></div>
             <div class="row"><span class="label">📶 WiFi</span><span class="value">ฟรีทั่วโรงแรม · มี desk ขนาดใหญ่ + USB charging</span></div>
@@ -2195,7 +2099,7 @@
           </div>
           <div class="inline-img">
             <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Nagoya_Sakae_area_from_Midland_Square.JPG?width=900" alt="Nagoya skyline near hotel" loading="lazy" onerror="this.parentElement.style.background='linear-gradient(135deg, #2a2a3e, #5a4a3e)';this.style.display='none'">
-            <div class="caption">名古屋駅周辺 · วิวเมืองนาโกย่าจาก sky bar (รอบโรงแรม)</div>
+            <div class="caption">วิวเมืองนาโกย่าจาก sky bar (รอบโรงแรม)</div>
           </div>
           <div class="helpers">
             <a class="helper-btn map" href="https://www.google.com/maps/search/?api=1&query=Mitsui+Garden+Hotel+Nagoya+Premier" target="_blank" rel="noopener"><span class="ico">📍</span>Maps</a>
@@ -2207,18 +2111,17 @@
           </div>
         </div>
       </div>
-
       <div class="schedule">
         <div class="schedule-time">19:00<span class="duration">2 ชม.</span></div>
         <div class="schedule-content">
-          <h4>Dinner: Tebasaki Chicken Wings <span class="jp">手羽先</span></h4>
+          <h4>Dinner: Tebasaki Chicken Wings</h4>
           <p>ปีกไก่ทอดสไตล์ Nagoya — ลอง Yamachan (Sekai no Yamachan) สาขา Sakae หรือ Furaibou ใน Esca ใต้สถานี Nagoya · ลอง Tebasaki + Doteni (เนื้อตุ๋นมิโซะ) + เบียร์</p>
           <div class="inline-img">
             <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Tebasaki_karaage_by_kawanet_in_Kanayama,_Nagoya.jpg?width=900" alt="Tebasaki chicken wings Nagoya" loading="lazy" onerror="this.parentElement.style.background='linear-gradient(135deg, #8a4a3a, #4a2a1a)';this.style.display='none'">
-            <div class="caption">手羽先唐揚げ · Tebasaki Karaage Nagoya-style</div>
+            <div class="caption">Tebasaki Karaage Nagoya-style</div>
           </div>
           <div class="note-box">
-            <span class="note-label">Setsubun 節分:</span> 3 ก.พ. คือวัน Setsubun (วันก่อนเริ่มฤดูใบไม้ผลิตามปฏิทินจันทรคติ) ถ้าทันเวลา ลองไป <strong>Osu Kannon Temple</strong> หรือ <strong>Atsuta Jingu</strong> ดูพิธี <em>mamemaki</em> โปรยถั่วขับไล่ปีศาจ — มักจัดช่วงบ่าย-เย็น
+            <span class="note-label">Setsubun:</span> 3 ก.พ. คือวัน Setsubun (วันก่อนเริ่มฤดูใบไม้ผลิตามปฏิทินจันทรคติ) ถ้าทันเวลา ลองไป <strong>Osu Kannon Temple</strong> หรือ <strong>Atsuta Jingu</strong> ดูพิธี <em>mamemaki</em> โปรยถั่วขับไล่ปีศาจ — มักจัดช่วงบ่าย-เย็น
           </div>
           <div class="helpers">
             <a class="helper-btn map" href="https://www.google.com/maps/search/?api=1&query=Sekai+no+Yamachan+Sakae" target="_blank" rel="noopener"><span class="ico">📍</span>Yamachan</a>
@@ -2233,7 +2136,7 @@
     <div class="stay-bar">
       <div>
         <div class="stay-label">Tonight's Stay · 3 คืนติด (Day 6–8)</div>
-        <div class="stay-name">★ Mitsui Garden Hotel Nagoya Premier <span class="jp">三井ガーデンホテル名古屋プレミア</span></div>
+        <div class="stay-name">★ Mitsui Garden Hotel Nagoya Premier</div>
         <div class="stay-price">~¥10,000–13,000/คืน · 4★ · เดิน 5 นาทีจากสถานี · top-floor sky lobby + onsen · รีวิว 4.4/5</div>
       </div>
       <div class="helpers">
@@ -2246,7 +2149,6 @@
       </div>
     </div>
   </div>
-
   <!-- ============ DAY 7 ============ -->
   <div class="day-card" id="day7">
     <div class="day-hero" data-fallback="🏯" style="background-image: linear-gradient(135deg, #0c1936aa, #c1272daa), url('https://commons.wikimedia.org/wiki/Special:FilePath/Nagoya_castle1.JPG?width=1400');">
@@ -2258,14 +2160,14 @@
           <span class="day-num">07</span>
           <span class="day-meta">
             <h3>Castle · Atsuta · Sakae</h3>
-            <div class="day-date">4 Feb 2027 · 名古屋城・熱田神宮</div>
+            <div class="day-date">4 Feb 2027</div>
           </span>
         </div>
       </div>
     </div>
     <div class="day-summary-row">
       <div>
-        <div class="jp-label">名古屋城・熱田神宮 · เที่ยวประวัติศาสตร์เต็มวัน</div>
+        <div class="jp-label">เที่ยวประวัติศาสตร์เต็มวัน</div>
         <div class="summary">ครึ่งเช้าเข้าปราสาทนาโกย่า + Honmaru Palace ที่บูรณะใหม่ ครึ่งบ่ายไป Atsuta Shrine ศาลเจ้าเก่าแก่ที่สุด เย็นช้อปย่าน Sakae + Oasis 21 + TV Tower</div>
       </div>
       <div class="day-tags">
@@ -2275,28 +2177,27 @@
       </div>
     </div>
     <div class="day-body">
-
       <div class="schedule">
         <div class="schedule-time">09:00<span class="duration">3 ชม.</span></div>
         <div class="schedule-content">
-          <h4>Nagoya Castle + Honmaru Palace <span class="jp">名古屋城・本丸御殿</span></h4>
+          <h4>Nagoya Castle + Honmaru Palace</h4>
           <p>ปราสาทนาโกย่า สร้างปี 1612 โดย Tokugawa Ieyasu มี <strong>Golden Shachihoko (ปลาทอง)</strong> บนยอดเป็นเอกลักษณ์ · เปิด 9:00–16:30, ตั๋ว ¥500</p>
           <div class="img-gallery">
             <div class="gallery-item">
               <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Old_Nagoya_Castle.JPG?width=600" alt="Nagoya Castle exterior" loading="lazy" onerror="this.parentElement.style.display='none'">
-              <div class="caption">名古屋城 · ภาพคลาสสิคพร้อม Shachihoko</div>
+              <div class="caption">ภาพคลาสสิคพร้อม Shachihoko</div>
             </div>
             <div class="gallery-item">
               <img src="https://commons.wikimedia.org/wiki/Special:FilePath/180330_Tenshu_and_Honmaru_Goten_of_Nagoya_castle.jpg?width=600" alt="Tenshu and Honmaru Goten" loading="lazy" onerror="this.parentElement.style.display='none'">
-              <div class="caption">天守 + 本丸御殿 · Tenshu + Honmaru Palace</div>
+              <div class="caption">Tenshu + Honmaru Palace</div>
             </div>
             <div class="gallery-item">
               <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Nagoya_Castle_Honmaru_Goten_(22).JPG?width=600" alt="Honmaru Palace interior" loading="lazy" onerror="this.parentElement.style.display='none'">
-              <div class="caption">本丸御殿 · ภายในจิตรกรรม Kano school</div>
+              <div class="caption">ภายในจิตรกรรม Kano school</div>
             </div>
             <div class="gallery-item">
               <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Inside_view_of_Hommaru_Palace_of_Nagoya_Castle_10.JPG?width=600" alt="Honmaru Palace inside" loading="lazy" onerror="this.parentElement.style.display='none'">
-              <div class="caption">本丸御殿内部 · ห้อง Tatami ประดับทอง</div>
+              <div class="caption">ห้อง Tatami ประดับทอง</div>
             </div>
           </div>
           <ul style="margin-top: 10px; padding-left: 20px; color: var(--ink-soft); font-size: 14px; line-height: 1.9;">
@@ -2316,15 +2217,14 @@
           </div>
         </div>
       </div>
-
       <div class="schedule">
         <div class="schedule-time">12:30<span class="duration">1.5 ชม.</span></div>
         <div class="schedule-content">
-          <h4>Lunch: Hitsumabushi (เมนูปลาไหลขึ้นชื่อ Nagoya) <span class="jp">ひつまぶし</span></h4>
+          <h4>Lunch: Hitsumabushi (เมนูปลาไหลขึ้นชื่อ Nagoya)</h4>
           <p>ที่ <strong>Atsuta Horaiken</strong> (ขึ้นชื่อ 150+ ปี, มีสาขาหลายแห่งรวมที่ Atsuta) หรือ <strong>Maruya Honten</strong> สาขา Esca ใต้สถานี · กิน 3 วิธี: ตามปกติ, ใส่เครื่องเคียง, ใส่ dashi เป็น ochazuke</p>
           <div class="inline-img">
             <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Hitsumabushi_1.jpg?width=900" alt="Hitsumabushi eel rice" loading="lazy" onerror="this.parentElement.style.background='linear-gradient(135deg, #8a4a3a, #4a2a1a)';this.style.display='none'">
-            <div class="caption">ひつまぶし · Hitsumabushi (Nagoya-style grilled eel on rice)</div>
+            <div class="caption">Hitsumabushi (Nagoya-style grilled eel on rice)</div>
           </div>
           <div class="meta"><span>~¥4,000–5,000/คน</span><span>คิวยาว เผื่อเวลา</span></div>
           <div class="helpers">
@@ -2335,20 +2235,19 @@
           </div>
         </div>
       </div>
-
       <div class="schedule">
         <div class="schedule-time">14:30<span class="duration">2 ชม.</span></div>
         <div class="schedule-content">
-          <h4>Atsuta Shrine <span class="jp">熱田神宮</span></h4>
+          <h4>Atsuta Shrine</h4>
           <p>ศาลเจ้าศักดิ์สิทธิ์อันดับ 2 ของญี่ปุ่นรองจาก Ise Jingu ประดิษฐาน Kusanagi-no-tsurugi (ดาบศักดิ์สิทธิ์) — ป่าโบราณ 600,000 ตร.ม. กลางเมือง · เดินรอบประมาณ 1 ชม.</p>
           <div class="img-gallery">
             <div class="gallery-item">
               <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Atsuta-jinguu_shoumen.JPG?width=600" alt="Atsuta Shrine main hall" loading="lazy" onerror="this.parentElement.style.display='none'">
-              <div class="caption">熱田神宮 拝殿 · ศาลาบูชาหลัก</div>
+              <div class="caption">ศาลาบูชาหลัก</div>
             </div>
             <div class="gallery-item">
               <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Atsuta-jinguu_keidai.JPG?width=600" alt="Atsuta Shrine grounds forest" loading="lazy" onerror="this.parentElement.style.display='none'">
-              <div class="caption">熱田神宮 境内 · ป่าศักดิ์สิทธิ์ 600,000 m²</div>
+              <div class="caption">ป่าศักดิ์สิทธิ์ 600,000 m²</div>
             </div>
           </div>
           <div class="meta"><span>ฟรี</span><span>เปิดตลอดเวลา</span></div>
@@ -2358,28 +2257,27 @@
           </div>
         </div>
       </div>
-
       <div class="schedule">
         <div class="schedule-time">17:00<span class="duration">3 ชม.</span></div>
         <div class="schedule-content">
-          <h4>Sakae: Shopping & City Lights <span class="jp">栄</span></h4>
+          <h4>Sakae: Shopping & City Lights</h4>
           <p>ย่าน Sakae เป็นใจกลางช้อป-เที่ยวของ Nagoya:</p>
           <div class="img-gallery">
             <div class="gallery-item">
               <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Street_view_of_Sakae,_Nagoya_at_night_20150124.JPG?width=600" alt="Sakae night street" loading="lazy" onerror="this.parentElement.style.display='none'">
-              <div class="caption">栄 夜景 · ถนน Sakae ตอนกลางคืน</div>
+              <div class="caption">ถนน Sakae ตอนกลางคืน</div>
             </div>
             <div class="gallery-item">
               <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Hisaya_Ōdori_Park_(Nagoya_TV_Tower_n1).JPG?width=600" alt="Nagoya TV Tower" loading="lazy" onerror="this.parentElement.style.display='none'">
-              <div class="caption">名古屋テレビ塔 · Mirai Tower (TV Tower)</div>
+              <div class="caption">Mirai Tower (TV Tower)</div>
             </div>
             <div class="gallery-item">
               <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Oasis_21_-_Sakae_Bus_Terminal_-_01.JPG?width=600" alt="Oasis 21 Sakae" loading="lazy" onerror="this.parentElement.style.display='none'">
-              <div class="caption">オアシス21 · เรือแก้วลอยฟ้า</div>
+              <div class="caption">เรือแก้วลอยฟ้า</div>
             </div>
             <div class="gallery-item">
               <img src="https://commons.wikimedia.org/wiki/Special:FilePath/RAYARD_Hisaya-odori_Park_and_Nagoya_TV_Tower_-_1.jpg?width=600" alt="Hisaya Odori Park" loading="lazy" onerror="this.parentElement.style.display='none'">
-              <div class="caption">久屋大通公園 · Hisaya Odori Park (renovated 2020)</div>
+              <div class="caption">Hisaya Odori Park (renovated 2020)</div>
             </div>
           </div>
           <ul style="margin-top: 10px; padding-left: 20px; color: var(--ink-soft); font-size: 14px; line-height: 1.9;">
@@ -2398,11 +2296,10 @@
           </div>
         </div>
       </div>
-
       <div class="schedule">
         <div class="schedule-time">20:00<span class="duration">1.5 ชม.</span></div>
         <div class="schedule-content">
-          <h4>Dinner: Miso Katsu ที่ Yabaton <span class="jp">味噌カツ</span></h4>
+          <h4>Dinner: Miso Katsu ที่ Yabaton</h4>
           <p>ทอนคัตสึราดมิโซะแดง สูตรเฉพาะของ Nagoya · ร้าน Yabaton สาขา Sakae มีหลายแห่ง · สั่ง waraji tonkatsu (ใหญ่เท่าตีน) เป็นซิกเนเจอร์</p>
           <div class="helpers">
             <a class="helper-btn map" href="https://www.google.com/maps/search/?api=1&query=Yabaton+Yaba+Honten" target="_blank" rel="noopener"><span class="ico">📍</span>Yabaton</a>
@@ -2411,11 +2308,10 @@
           </div>
         </div>
       </div>
-
       <div class="schedule">
         <div class="schedule-time">21:30<span class="duration">~30 นาที</span></div>
         <div class="schedule-content">
-          <h4>กลับที่พัก: Mitsui Garden Hotel <span class="jp">ホテルへ戻る</span></h4>
+          <h4>กลับที่พัก: Mitsui Garden Hotel</h4>
           <p>นั่ง subway สาย Higashiyama จาก Sakae → Nagoya 5 นาที (¥210) แล้วเดิน 5 นาที · กลับถึงโรงแรมขึ้นไปแช่ sky onsen ชั้นบนสุดวิวกลางคืน</p>
           <div class="hotel-back-pill">
             <span>📞 <a href="tel:+81525871131">+81 52-587-1131</a></span>
@@ -2430,12 +2326,11 @@
     <div class="stay-bar">
       <div>
         <div class="stay-label">Tonight's Stay</div>
-        <div class="stay-name">★ Mitsui Garden Hotel Nagoya Premier (คืนต่อ) <span class="jp">三井ガーデンホテル</span></div>
+        <div class="stay-name">★ Mitsui Garden Hotel Nagoya Premier (คืนต่อ)</div>
         <div class="stay-price">~¥10,000–13,000/คืน · top-floor sky lobby + onsen</div>
       </div>
     </div>
   </div>
-
   <!-- ============ DAY 8 ============ -->
   <div class="day-card" id="day8">
     <div class="day-hero" data-fallback="🛍️" style="background-image: linear-gradient(135deg, #0c1936aa, #c5677aaa), url('https://commons.wikimedia.org/wiki/Special:FilePath/Japan-_Nagoya-_Osu_Kannon_Temple_1.jpg?width=1400');">
@@ -2447,14 +2342,14 @@
           <span class="day-num">08</span>
           <span class="day-meta">
             <h3>Last Day · Museum / Osu / Shopping</h3>
-            <div class="day-date">5 Feb 2027 · 最後の一日</div>
+            <div class="day-date">5 Feb 2027</div>
           </span>
         </div>
       </div>
     </div>
     <div class="day-summary-row">
       <div>
-        <div class="jp-label">最後の一日 · ปิดทริปแบบสบายๆ</div>
+        <div class="jp-label">ปิดทริปแบบสบายๆ</div>
         <div class="summary">เลือกระหว่าง museum (SCMaglev / Toyota), เดินตลาด Osu สไตล์ retro, หรือช็อปปิ้งบรรจุของฝากที่ JR Tower และ Midland Square — ส่วนเย็นเก็บมื้อสุดท้ายให้คุ้ม</div>
       </div>
       <div class="day-tags">
@@ -2464,11 +2359,10 @@
       </div>
     </div>
     <div class="day-body">
-
       <div class="schedule">
         <div class="schedule-time">09:30<span class="duration">3 ชม.</span></div>
         <div class="schedule-content">
-          <h4>เลือก Morning Activity (3 ตัวเลือก) <span class="jp">午前の選択</span></h4>
+          <h4>เลือก Morning Activity (3 ตัวเลือก)</h4>
           <p style="margin-bottom: 12px;">เลือก 1 ใน 3 ตามความสนใจ:</p>
           <ul style="margin-top: 10px; padding-left: 20px; color: var(--ink-soft); font-size: 14px; line-height: 1.9;">
             <li><strong>SCMaglev and Railway Park</strong> (¥1,000) — พิพิธภัณฑ์รถไฟ JR Central มี shinkansen 0 series รถ Maglev ที่วิ่ง 581 km/h, simulator · นั่ง Aonami Line จากสถานี Nagoya 24 นาที</li>
@@ -2485,11 +2379,10 @@
           </div>
         </div>
       </div>
-
       <div class="schedule">
         <div class="schedule-time">13:00<span class="duration">1.5 ชม.</span></div>
         <div class="schedule-content">
-          <h4>Lunch: Kishimen หรือ Taiwan Ramen <span class="jp">きしめん・台湾ラーメン</span></h4>
+          <h4>Lunch: Kishimen หรือ Taiwan Ramen</h4>
           <p>เมนู Nagoya specialty:</p>
           <ul style="margin-top: 10px; padding-left: 20px; color: var(--ink-soft); font-size: 14px; line-height: 1.9;">
             <li><strong>Kishimen</strong> (เส้นแบนกว้าง) ที่ Sumiyoshi หรือ Yabaton</li>
@@ -2504,11 +2397,10 @@
           </div>
         </div>
       </div>
-
       <div class="schedule">
         <div class="schedule-time">14:30<span class="duration">3 ชม.</span></div>
         <div class="schedule-content">
-          <h4>JR Tower / Takashimaya / Midland Square <span class="jp">名駅エリア</span></h4>
+          <h4>JR Tower / Takashimaya / Midland Square</h4>
           <p>ช้อปย่านสถานี — ใหญ่ที่สุดในนาโกย่า:</p>
           <ul style="margin-top: 10px; padding-left: 20px; color: var(--ink-soft); font-size: 14px; line-height: 1.9;">
             <li><strong>JR Gate Tower</strong> — Bic Camera, Uniqlo, Nitori, Tokyu Hands</li>
@@ -2524,11 +2416,10 @@
           </div>
         </div>
       </div>
-
       <div class="schedule">
         <div class="schedule-time">18:00<span class="duration">2 ชม.</span></div>
         <div class="schedule-content">
-          <h4>Optional: Tokugawa Garden หรือ Noritake Garden <span class="jp">徳川園・則武の杜</span></h4>
+          <h4>Optional: Tokugawa Garden หรือ Noritake Garden</h4>
           <p>ถ้ามีเวลาเหลือ — Tokugawa Garden + Tokugawa Art Museum (สมบัติของตระกูล Tokugawa) หรือ Noritake Garden (โรงงานเครื่องลายครามเก่า)</p>
           <div class="helpers">
             <a class="helper-btn map" href="https://www.google.com/maps/search/?api=1&query=Tokugawa+Garden+Nagoya" target="_blank" rel="noopener"><span class="ico">📍</span>Tokugawa</a>
@@ -2538,19 +2429,17 @@
           </div>
         </div>
       </div>
-
       <div class="schedule">
         <div class="schedule-time">19:30<span class="duration">2.5 ชม.</span></div>
         <div class="schedule-content">
-          <h4>Last Dinner: Hitsumabushi อีกครั้ง / หรือ Hida Beef <span class="jp">最後の晩餐</span></h4>
+          <h4>Last Dinner: Hitsumabushi อีกครั้ง / หรือ Hida Beef</h4>
           <p>ปิดทริปด้วยมื้อพิเศษ — Hitsumabushi รอบที่ 2 (เพราะอร่อยจริง) หรือ Hida Beef shabu-shabu ที่ร้าน Ten ใน Sakae · ลอง Yebisu beer สด</p>
         </div>
       </div>
-
       <div class="schedule">
         <div class="schedule-time">22:00<span class="duration">1 ชม.</span></div>
         <div class="schedule-content">
-          <h4>กลับที่พัก + Pack + เตรียมตัวกลับ <span class="jp">パッキング</span></h4>
+          <h4>กลับที่พัก + Pack + เตรียมตัวกลับ</h4>
           <p>เก็บกระเป๋า เตรียมเช็คอินออนไลน์ของสายการบิน เผื่อนำของฝากที่ฝาก hotel mailing service ไปสนามบินก็ได้ · แช่ sky onsen รอบสุดท้ายก่อนเข้านอน</p>
           <div class="hotel-back-pill">
             <span>📞 <a href="tel:+81525871131">+81 52-587-1131</a></span>
@@ -2567,12 +2456,11 @@
     <div class="stay-bar">
       <div>
         <div class="stay-label">Tonight's Stay</div>
-        <div class="stay-name">★ Mitsui Garden Hotel Nagoya Premier (คืนสุดท้าย) <span class="jp">三井ガーデンホテル</span></div>
+        <div class="stay-name">★ Mitsui Garden Hotel Nagoya Premier (คืนสุดท้าย)</div>
         <div class="stay-price">~¥10,000–13,000/คืน · top-floor sky lobby + onsen</div>
       </div>
     </div>
   </div>
-
   <!-- ============ DAY 9 ============ -->
   <div class="day-card" id="day9">
     <div class="day-hero" data-fallback="🛫" style="background-image: linear-gradient(135deg, #0c1936aa, #1c2e5acc), url('https://commons.wikimedia.org/wiki/Special:FilePath/Centrair_bridge.JPG?width=1400');">
@@ -2584,14 +2472,14 @@
           <span class="day-num">09</span>
           <span class="day-meta">
             <h3>Nagoya → Centrair → BKK</h3>
-            <div class="day-date">6 Feb 2027 · 帰国 · กลับบ้าน</div>
+            <div class="day-date">6 Feb 2027 · กลับบ้าน</div>
           </span>
         </div>
       </div>
     </div>
     <div class="day-summary-row">
       <div>
-        <div class="jp-label">帰国 · กลับบ้านอย่างปลอดภัย</div>
+        <div class="jp-label">กลับบ้านอย่างปลอดภัย</div>
         <div class="summary">เก็บของ ออกโรงแรมสาย-เที่ยง นั่ง Meitetsu μ-SKY สู่สนามบิน Centrair มีเวลาเดินช้อปขั้นสุดท้ายที่ Sky Town ก่อนเช็คอิน</div>
       </div>
       <div class="day-tags">
@@ -2599,11 +2487,10 @@
       </div>
     </div>
     <div class="day-body">
-
       <div class="schedule">
         <div class="schedule-time">10:00<span class="duration">~30 นาที</span></div>
         <div class="schedule-content">
-          <h4>Check-out + ฝากกระเป๋าที่ Concierge <span class="jp">チェックアウト</span></h4>
+          <h4>Check-out + ฝากกระเป๋าที่ Concierge</h4>
           <p>หรือถ้าเที่ยวบินบ่ายแก่ๆ อาจจะใช้บริการ baggage delivery ส่งตรงสนามบิน — JAL ABC, Yamato Transport (¥2,000–3,000/ใบ)</p>
           <div class="helpers">
             <a class="helper-btn info" href="https://www.jalabc.com/english/" target="_blank" rel="noopener"><span class="ico">🌐</span>JAL ABC</a>
@@ -2611,11 +2498,10 @@
           </div>
         </div>
       </div>
-
       <div class="schedule">
         <div class="schedule-time">10:30<span class="duration">1 ชม.</span></div>
         <div class="schedule-content">
-          <h4>Last Coffee + ของฝากนาทีสุดท้าย <span class="jp">お土産</span></h4>
+          <h4>Last Coffee + ของฝากนาทีสุดท้าย</h4>
           <p>Ekibe (เบนโตะ) ที่ Esca ใต้สถานี · ของฝากที่ depachika Takashimaya · ขนม Uiro (ขนมหวาน Nagoya) ที่ Aoyagi Sohonten</p>
           <div class="helpers">
             <a class="helper-btn map" href="https://www.google.com/maps/search/?api=1&query=Esca+Nagoya+Station" target="_blank" rel="noopener"><span class="ico">📍</span>Esca</a>
@@ -2623,11 +2509,10 @@
           </div>
         </div>
       </div>
-
       <div class="schedule">
         <div class="schedule-time">12:00<span class="duration">28 นาที</span></div>
         <div class="schedule-content">
-          <h4>Meitetsu μ-SKY → Centrair Airport <span class="jp">セントレアへ</span></h4>
+          <h4>Meitetsu μ-SKY → Centrair Airport</h4>
           <p>นั่งจาก Meitetsu Nagoya Station ออกทุก 30 นาที — ขอแนะนำเผื่อให้ถึงสนามบินก่อนเที่ยวบิน 3 ชม. สำหรับเที่ยวบินระหว่างประเทศ</p>
           <div class="meta"><span>¥1,250</span><span>ที่นั่งสำรองทั้งขบวน</span></div>
           <div class="helpers">
@@ -2635,11 +2520,10 @@
           </div>
         </div>
       </div>
-
       <div class="schedule">
         <div class="schedule-time">13:00<span class="duration">2 ชม.</span></div>
         <div class="schedule-content">
-          <h4>Centrair Sky Town + Last Shopping <span class="jp">スカイタウン</span></h4>
+          <h4>Centrair Sky Town + Last Shopping</h4>
           <p>Centrair มี Sky Town จำลองย่านญี่ปุ่นโบราณ + Western shopping street + observation deck ดูเครื่องบินขึ้น-ลงดีมาก · ชิ้นสุดท้ายของฝาก Royce, Tokyo Banana, Hida specialty</p>
           <div class="helpers">
             <a class="helper-btn info" href="https://www.centrair.jp/en/shopping/" target="_blank" rel="noopener"><span class="ico">🌐</span>Sky Town</a>
@@ -2647,11 +2531,10 @@
           </div>
         </div>
       </div>
-
       <div class="schedule">
         <div class="schedule-time">15:00<span class="duration">~6 ชม. บิน</span></div>
         <div class="schedule-content">
-          <h4>เช็คอิน + Flight NGO → BKK <span class="jp">帰国</span></h4>
+          <h4>เช็คอิน + Flight NGO → BKK</h4>
           <p>เที่ยวบินกลับบ่าย-เย็น เช่น TG647 (NGO 17:30 → BKK 21:30) หรือเลือกเที่ยวบินตามสายการบินที่ใช้</p>
           <div class="note-box">
             <span class="note-label">หมายเหตุ:</span> เช็คน้ำหนักกระเป๋าให้ดี ของฝากเช่น sake, miso paste อยู่ในข้อจำกัด liquid 100ml ไม่ได้ — ต้อง check-in
@@ -2664,13 +2547,11 @@
     </div>
   </div>
 </section>
-
-<div class="divider">— 美食 —</div>
-
+<div class="divider">—  —</div>
 <!-- FOOD GALLERY -->
 <section class="section">
   <div class="section-header">
-    <span class="num">— 食 · LOCAL DISHES —</span>
+    <span class="num">— LOCAL DISHES —</span>
     <h2>อาหารท้องถิ่นที่ห้ามพลาด</h2>
     <p class="subtitle">ของกินขึ้นชื่อในแต่ละเมือง — ลองให้ครบ พร้อมลิงก์ Tabelog ของร้านเด่น</p>
   </div>
@@ -2678,7 +2559,6 @@
     <div class="food-card">
       <span class="emoji">🥩</span>
       <div class="name">Hida Beef</div>
-      <div class="name-jp">飛騨牛</div>
       <div class="desc">วัวฮิดะ A5 ลายไขมันละเอียด ลอง sushi/นิกิริ, sukiyaki, steak</div>
       <div class="helpers">
         <a class="helper-btn menu" href="https://tabelog.com/en/gifu/A2104/A210401/21000150/" target="_blank" rel="noopener">Kitchen Hida</a>
@@ -2688,7 +2568,6 @@
     <div class="food-card">
       <span class="emoji">🍢</span>
       <div class="name">Mitarashi Dango</div>
-      <div class="name-jp">みたらし団子</div>
       <div class="desc">ข้าวเหนียวปั้นย่างราดซอสถั่วเหลือง ของกินเล่นใน Sanmachi</div>
       <div class="helpers">
         <a class="helper-btn map" href="https://www.google.com/maps/search/?api=1&query=Mitarashi+Dango+Sanmachi+Takayama" target="_blank" rel="noopener">📍 Map</a>
@@ -2697,7 +2576,6 @@
     <div class="food-card">
       <span class="emoji">🍣</span>
       <div class="name">Hida Beef Sushi</div>
-      <div class="name-jp">飛騨牛にぎり</div>
       <div class="desc">เนื้อ Hida ผ่านไฟอ่อนวางบนข้าว เสิร์ฟบนกระเบื้อง</div>
       <div class="helpers">
         <a class="helper-btn menu" href="https://kotteushi.jp/" target="_blank" rel="noopener">Kotteushi</a>
@@ -2707,7 +2585,6 @@
     <div class="food-card">
       <span class="emoji">🍱</span>
       <div class="name">Hoba Miso</div>
-      <div class="name-jp">朴葉味噌</div>
       <div class="desc">มิโซะย่างบนใบโฮบะ ผสมเนื้อ/เห็ด/ผัก อาหารชาวภูเขา Hida แท้</div>
       <div class="helpers">
         <a class="helper-btn menu" href="https://www.suzuyahonten.co.jp/" target="_blank" rel="noopener">Suzuya</a>
@@ -2716,7 +2593,6 @@
     <div class="food-card">
       <span class="emoji">🍜</span>
       <div class="name">Takayama Ramen</div>
-      <div class="name-jp">高山ラーメン</div>
       <div class="desc">เส้นบาง น้ำซุปโชยุใส แบบบ้านๆ</div>
       <div class="helpers">
         <a class="helper-btn menu" href="https://tabelog.com/en/gifu/A2104/A210401/21000236/" target="_blank" rel="noopener">Mendokoro Hidaji</a>
@@ -2725,7 +2601,6 @@
     <div class="food-card">
       <span class="emoji">🍶</span>
       <div class="name">Hida Sake</div>
-      <div class="name-jp">飛騨地酒</div>
       <div class="desc">น้ำสะอาด อากาศหนาว = สาเกคุณภาพ</div>
       <div class="helpers">
         <a class="helper-btn info" href="https://www.funasaka-shuzo.co.jp/" target="_blank" rel="noopener">Funasaka</a>
@@ -2735,7 +2610,6 @@
     <div class="food-card">
       <span class="emoji">🍤</span>
       <div class="name">Hitsumabushi</div>
-      <div class="name-jp">ひつまぶし</div>
       <div class="desc">ข้าวหน้าปลาไหล Nagoya กิน 3 วิธี</div>
       <div class="helpers">
         <a class="helper-btn menu" href="https://www.houraiken.com/" target="_blank" rel="noopener">Horaiken</a>
@@ -2745,7 +2619,6 @@
     <div class="food-card">
       <span class="emoji">🐔</span>
       <div class="name">Tebasaki</div>
-      <div class="name-jp">手羽先</div>
       <div class="desc">ปีกไก่ทอดสไตล์ Nagoya กินกับเบียร์</div>
       <div class="helpers">
         <a class="helper-btn menu" href="https://www.yamachan.co.jp/" target="_blank" rel="noopener">Yamachan</a>
@@ -2755,7 +2628,6 @@
     <div class="food-card">
       <span class="emoji">🍖</span>
       <div class="name">Miso Katsu</div>
-      <div class="name-jp">味噌カツ</div>
       <div class="desc">ทอนคัตสึราดมิโซะแดงข้น</div>
       <div class="helpers">
         <a class="helper-btn menu" href="https://www.yabaton.com/" target="_blank" rel="noopener">Yabaton</a>
@@ -2765,7 +2637,6 @@
     <div class="food-card">
       <span class="emoji">🍝</span>
       <div class="name">Ankake Spaghetti</div>
-      <div class="name-jp">あんかけスパ</div>
       <div class="desc">สปาเก็ตตี้ราดซอสข้นเผ็ด สเปกพิเศษ Nagoya</div>
       <div class="helpers">
         <a class="helper-btn menu" href="https://tabelog.com/en/aichi/A2301/A230102/23000404/" target="_blank" rel="noopener">Yokoi</a>
@@ -2774,7 +2645,6 @@
     <div class="food-card">
       <span class="emoji">🐟</span>
       <div class="name">Kishimen</div>
-      <div class="name-jp">きしめん</div>
       <div class="desc">เส้นอุด้งแบนกว้าง</div>
       <div class="helpers">
         <a class="helper-btn menu" href="https://tabelog.com/en/aichi/A2301/A230101/23000182/" target="_blank" rel="noopener">Sumiyoshi</a>
@@ -2783,7 +2653,6 @@
     <div class="food-card">
       <span class="emoji">🍡</span>
       <div class="name">Uiro</div>
-      <div class="name-jp">ういろう</div>
       <div class="desc">ขนมหวานนุ่มทำจากแป้งข้าว ของฝาก Nagoya</div>
       <div class="helpers">
         <a class="helper-btn info" href="https://www.aoyagiuirou.co.jp/" target="_blank" rel="noopener">Aoyagi</a>
@@ -2791,13 +2660,11 @@
     </div>
   </div>
 </section>
-
-<div class="divider">— 心得 —</div>
-
+<div class="divider">—  —</div>
 <!-- TIPS -->
 <section class="section" id="tips">
   <div class="section-header">
-    <span class="num">— 心得 · TRAVEL TIPS —</span>
+    <span class="num">— TRAVEL TIPS —</span>
     <h2>ทริคเที่ยวหน้าหนาว Chubu</h2>
     <p class="subtitle">ข้อควรรู้ที่จะช่วยให้ทริปราบรื่น พร้อมลิงก์ที่เกี่ยวข้อง</p>
   </div>
@@ -2841,7 +2708,7 @@
     </div>
     <div class="tip-card">
       <div class="num">— 05 —</div>
-      <h4>Setsubun 節分 — 3 ก.พ.</h4>
+      <h4>Setsubun — 3 ก.พ.</h4>
       <p>วัน Setsubun ตรงกับ Day 6! ถ้าทันถึงนาโกย่าก่อน 14:00 ลองไป Osu Kannon ดูพิธี mamemaki โปรยถั่ว · กิน ehomaki (sushi roll ทั้งม้วน) หันหน้าทิศมงคลของปี</p>
       <div class="helpers" style="margin-top:12px;">
         <a class="helper-btn info" href="https://www.osu-kannon.jp/" target="_blank" rel="noopener">Osu Kannon</a>
@@ -2926,11 +2793,10 @@
     </div>
   </div>
 </section>
-
 <!-- BUDGET -->
 <section class="budget-section" id="budget">
   <div class="section-header">
-    <span class="num">— 予算 · BUDGET —</span>
+    <span class="num">— BUDGET —</span>
     <h2>ประมาณการงบประมาณ</h2>
     <p class="subtitle">ต่อ 1 คน · 9 วัน 8 คืน · หน่วย JPY</p>
   </div>
@@ -2948,7 +2814,6 @@
       <div class="budget-row"><span class="label">Hotel Nagoya × 3 คืน</span><span class="value">¥30,000</span></div>
       <div class="budget-row total"><span class="label">รวม Travel + Stay</span><span class="value">¥207,600</span></div>
     </div>
-
     <div class="budget-table">
       <h3>ค่ากิจกรรม + อาหาร + อื่นๆ</h3>
       <div class="budget-row"><span class="label">Ski lift + rental + lesson</span><span class="value">¥10,000</span></div>
@@ -2963,7 +2828,6 @@
       <div class="budget-row total"><span class="label">รวม Activities + Food</span><span class="value">¥131,000</span></div>
     </div>
   </div>
-
   <div style="max-width: 1100px; margin: 60px auto 0; text-align: center; padding: 40px; background: rgba(255,255,255,0.06); border-radius: 4px; border: 1px solid rgba(255,255,255,0.1);">
     <div style="font-size: 11px; letter-spacing: 0.3em; color: var(--gold-soft); margin-bottom: 12px;">GRAND TOTAL · PER PERSON</div>
     <div style="font-family: 'Shippori Mincho', serif; font-size: 56px; font-weight: 700; color: var(--snow); line-height: 1;">¥338,600</div>
@@ -2973,11 +2837,10 @@
     </div>
   </div>
 </section>
-
 <!-- PACKING -->
 <section class="section">
   <div class="section-header">
-    <span class="num">— 持ち物 · PACKING LIST —</span>
+    <span class="num">— PACKING LIST —</span>
     <h2>Checklist กระเป๋าหน้าหนาว</h2>
     <p class="subtitle">เตรียมให้พร้อมก่อนวันเดินทาง</p>
   </div>
@@ -3051,11 +2914,10 @@
     </div>
   </div>
 </section>
-
 <!-- WEATHER -->
 <section class="section">
   <div class="section-header">
-    <span class="num">— 天気 · WEATHER —</span>
+    <span class="num">— WEATHER —</span>
     <h2>สภาพอากาศที่คาดการณ์</h2>
     <p class="subtitle">ค่าเฉลี่ย ม.ค.-ก.พ. ในแต่ละจุด · เผื่อใจไว้</p>
   </div>
@@ -3117,13 +2979,10 @@
     </table>
   </div>
 </section>
-
-<div class="divider">— 終 —</div>
-
+<div class="divider">—  —</div>
 <footer>
-  <div class="logo">良い旅を</div>
-  <div style="font-size: 12px; opacity: 0.7;">— Have a wonderful journey —</div>
-  <div class="kanji">中部之旅</div>
+  <div class="logo">Have a wonderful journey</div>
+  <div style="font-size: 12px; opacity: 0.7;">— ขอให้เดินทางสนุก —</div>
   <div style="margin-top: 16px; font-size: 12px; opacity: 0.5;">
     Itinerary v2 · Curated for Tinnakorn · January 29 — February 6, 2027<br>
     ใช้เป็น guide ส่วนตัว · ตรวจสอบเวลาเดินทางและราคาอีกครั้งใกล้วันเดินทาง<br>
@@ -3131,6 +2990,5 @@
     *รูปภาพประกอบจาก Wikimedia Commons (Public/CC license)*
   </div>
 </footer>
-
 </body>
 </html>
